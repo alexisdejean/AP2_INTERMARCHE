@@ -22,6 +22,7 @@ namespace AP2_INTERMARCHE
 
             if (ValidationIdentitee(id, mdp))
             {
+<<<<<<< HEAD
                 if(ValidationRole(id, mdp))
                 {
                     MessageBox.Show("Connexion Réussie !", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -50,6 +51,11 @@ namespace AP2_INTERMARCHE
                 {
                     MessageBox.Show("Rôle inconnu", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+=======
+                MessageBox.Show("Connexion Réussie !", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                home_C connecte = new home_C();
+                connecte.Show();
+>>>>>>> origin/dev
             }
                     
             else
@@ -59,7 +65,12 @@ namespace AP2_INTERMARCHE
         }
         private bool ValidationIdentitee(string identifiant, string mot_de_passe)
         {
+<<<<<<< HEAD
             string connectionString = @"Server=MSI;Database=bdd_intermarche;Trusted_Connection=True;TrustServerCertificate=True;";
+=======
+            bool validation = false;
+            string connectionString = global.connection;
+>>>>>>> origin/dev
             using (SqlConnection connexion = new SqlConnection(connectionString))
             using (SqlCommand commande = new SqlCommand("VerifieIdentification", connexion))
             {
