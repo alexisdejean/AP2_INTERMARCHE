@@ -81,7 +81,6 @@ namespace AP2_INTERMARCHE
             {
                 command.CommandType = CommandType.StoredProcedure;
                 command.Parameters.Add("@identifiant_user", SqlDbType.VarChar, 100).Value = identifiant;
-                command.Parameters.Add("@mot_de_passe", SqlDbType.VarChar, 255).Value = mot_de_passe;
 
                 connexion.Open();
 
