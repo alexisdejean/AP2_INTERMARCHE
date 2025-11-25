@@ -397,7 +397,6 @@
         }
       },
       "System.Security.Cryptography.ProtectedData/8.0.0": {},
-<<<<<<< HEAD
       "System.Text.Json/8.0.5": {
         "runtime": {
           "lib/net8.0/System.Text.Json.dll": {
@@ -406,9 +405,6 @@
           }
         }
       }
-=======
-      "System.Text.Json/8.0.5": {}
->>>>>>> origin/dev
     }
   },
   "libraries": {

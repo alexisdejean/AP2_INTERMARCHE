@@ -22,27 +22,26 @@ namespace AP2_INTERMARCHE
 
             if (ValidationIdentitee(id, mdp))
             {
-<<<<<<< HEAD
                 if(ValidationRole(id, mdp))
                 {
                     MessageBox.Show("Connexion Réussie !", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    if (Globale.role == 1)
+                    if (global.role == 1)
                     {
                         home_R connecte = new home_R();
                         connecte.Show();
                     }
                     else
                     {
-                        if (Globale.role == 2)
+                        if (global.role == 2)
                         {
-                            home_P connecte = new home_P();
-                            connecte.Show();
+                            home_P connectet = new home_P();
+                            connectet.Show();
                         }
                         else
                         {
-                            home_C connecte = new home_C();
-                            connecte.Show();
+                            home_C connectee = new home_C();
+                            connectee.Show();
                         }
                     }
                     
@@ -51,11 +50,6 @@ namespace AP2_INTERMARCHE
                 {
                     MessageBox.Show("Rôle inconnu", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-=======
-                MessageBox.Show("Connexion Réussie !", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                home_C connecte = new home_C();
-                connecte.Show();
->>>>>>> origin/dev
             }
                     
             else
@@ -65,12 +59,7 @@ namespace AP2_INTERMARCHE
         }
         private bool ValidationIdentitee(string identifiant, string mot_de_passe)
         {
-<<<<<<< HEAD
-            string connectionString = @"Server=MSI;Database=bdd_intermarche;Trusted_Connection=True;TrustServerCertificate=True;";
-=======
-            bool validation = false;
             string connectionString = global.connection;
->>>>>>> origin/dev
             using (SqlConnection connexion = new SqlConnection(connectionString))
             using (SqlCommand commande = new SqlCommand("VerifieIdentification", connexion))
             {
@@ -86,7 +75,7 @@ namespace AP2_INTERMARCHE
         }
         private bool ValidationRole(string identifiant, string mot_de_passe)
         {
-            string connectionString = @"Server=MSI;Database=bdd_intermarche;Trusted_Connection=True;TrustServerCertificate=True;";
+            string connectionString = global.connection;
             using (SqlConnection connexion = new SqlConnection(connectionString))
             using (SqlCommand command = new SqlCommand("VerifierRole", connexion))
             {
@@ -99,21 +88,21 @@ namespace AP2_INTERMARCHE
                 object result = command.ExecuteScalar();
                 if (Convert.ToInt32(result) == 1)
                 {
-                    Globale.role = 1;
+                    global.role = 1;
                     return true;
                 }
                 else
                 {
                     if (Convert.ToInt32(result) == 2)
                     {
-                        Globale.role = 2;
+                        global.role = 2;
                         return true;
                     }
                     else
                     {
                         if (Convert.ToInt32(result) == 3)
                         {
-                            Globale.role = 3;
+                            global.role = 3;
                             return true;
                         }
                         else
@@ -122,9 +111,8 @@ namespace AP2_INTERMARCHE
                         }
                     }
                 }
-            };
+            }
         }
-    }
 
         private void VerifieRempli()
         {

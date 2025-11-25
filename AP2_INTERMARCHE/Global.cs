@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,6 +10,7 @@ namespace AP2_INTERMARCHE
 {
     internal class global
     {
-        public static string connection = "Data Source=LAPTOP-C8LQR30P;Initial Catalog = C#_Nuget;Integrated Security=True;TrustServerCertificate=True";
+        public static string connection = @"Server=MSI;Database=bdd_intermarche;Trusted_Connection=True;TrustServerCertificate=True;";
+        public static int role = 0;
     }
 }
