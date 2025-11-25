@@ -23,7 +23,7 @@ namespace AP2_INTERMARCHE
             if (ValidationIdentitee(id, mdp))
             {
                 MessageBox.Show("Connexion Réussie !", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                home connecte = new home();
+                home_C connecte = new home_C();
                 connecte.Show();
             }
             else
@@ -34,7 +34,7 @@ namespace AP2_INTERMARCHE
         private bool ValidationIdentitee(string identifiant, string mot_de_passe)
         {
             bool validation = false;
-            string connectionString = @"Server=MSI;Database=ProjetSQLdb;Trusted_Connection=True;TrustServerCertificate=True;";
+            string connectionString = global.connection;
             using (SqlConnection connexion = new SqlConnection(connectionString))
             using (SqlCommand commande = new SqlCommand("VerifieIdentification", connexion))
             {
