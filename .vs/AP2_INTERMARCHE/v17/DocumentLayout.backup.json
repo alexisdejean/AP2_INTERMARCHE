@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\supra\\source\\repos\\AP2_INTERMARCHE\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|c:\\users\\supra\\source\\repos\\ap2_intermarche\\ap2_intermarche\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|solutionrelative:ap2_intermarche\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|c:\\users\\supra\\source\\repos\\ap2_intermarche\\ap2_intermarche\\accueil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|solutionrelative:ap2_intermarche\\accueil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|c:\\users\\supra\\source\\repos\\ap2_intermarche\\ap2_intermarche\\accueil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|solutionrelative:ap2_intermarche\\accueil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\supra\\source\\repos\\AP2_INTERMARCHE\\AP2_INTERMARCHE\\Form1.cs",
-              "RelativeDocumentMoniker": "AP2_INTERMARCHE\\Form1.cs",
-              "ToolTip": "C:\\Users\\supra\\source\\repos\\AP2_INTERMARCHE\\AP2_INTERMARCHE\\Form1.cs [Design]",
-              "RelativeToolTip": "AP2_INTERMARCHE\\Form1.cs [Design]",
+              "DocumentIndex": 1,
+              "Title": "Accueil.cs",
+              "DocumentMoniker": "C:\\Users\\supra\\source\\repos\\AP2_INTERMARCHE\\AP2_INTERMARCHE\\Accueil.cs",
+              "RelativeDocumentMoniker": "AP2_INTERMARCHE\\Accueil.cs",
+              "ToolTip": "C:\\Users\\supra\\source\\repos\\AP2_INTERMARCHE\\AP2_INTERMARCHE\\Accueil.cs",
+              "RelativeToolTip": "AP2_INTERMARCHE\\Accueil.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T13:40:41.558Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-11-18T13:51:39.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Accueil.cs [Conception]",
+              "DocumentMoniker": "C:\\Users\\supra\\source\\repos\\AP2_INTERMARCHE\\AP2_INTERMARCHE\\Accueil.cs",
+              "RelativeDocumentMoniker": "AP2_INTERMARCHE\\Accueil.cs",
+              "ToolTip": "C:\\Users\\supra\\source\\repos\\AP2_INTERMARCHE\\AP2_INTERMARCHE\\Accueil.cs [Conception]",
+              "RelativeToolTip": "AP2_INTERMARCHE\\Accueil.cs [Conception]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T13:41:27.757Z",
+              "EditorCaption": " [Conception]"
             }
           ]
         }
