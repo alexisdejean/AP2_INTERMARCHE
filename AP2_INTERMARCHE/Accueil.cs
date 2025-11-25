@@ -22,10 +22,36 @@ namespace AP2_INTERMARCHE
 
             if (ValidationIdentitee(id, mdp))
             {
-                MessageBox.Show("Connexion Réussie !", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                home connecte = new home();
-                connecte.Show();
+                if(ValidationRole(id, mdp))
+                {
+                    MessageBox.Show("Connexion Réussie !", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    if (Globale.role == 1)
+                    {
+                        home_R connecte = new home_R();
+                        connecte.Show();
+                    }
+                    else
+                    {
+                        if (Globale.role == 2)
+                        {
+                            home_P connecte = new home_P();
+                            connecte.Show();
+                        }
+                        else
+                        {
+                            home_C connecte = new home_C();
+                            connecte.Show();
+                        }
+                    }
+                    
+                }
+                else
+                {
+                    MessageBox.Show("Rôle inconnu", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
+                    
             else
             {
                 MessageBox.Show("Identifiants incorrects", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -33,21 +59,62 @@ namespace AP2_INTERMARCHE
         }
         private bool ValidationIdentitee(string identifiant, string mot_de_passe)
         {
-            bool validation = false;
-            string connectionString = @"Server=MSI;Database=ProjetSQLdb;Trusted_Connection=True;TrustServerCertificate=True;";
+            string connectionString = @"Server=MSI;Database=bdd_intermarche;Trusted_Connection=True;TrustServerCertificate=True;";
             using (SqlConnection connexion = new SqlConnection(connectionString))
             using (SqlCommand commande = new SqlCommand("VerifieIdentification", connexion))
             {
                 commande.CommandType = CommandType.StoredProcedure;
-                commande.Parameters.Add("@identifiant_user", SqlDbType.VarChar, 100).Value = identifiant;
-                commande.Parameters.Add("@mot_de_passe", SqlDbType.VarChar, 200).Value = mot_de_passe;
+                commande.Parameters.Add("@identifiant", SqlDbType.VarChar, 100).Value = identifiant;
+                commande.Parameters.Add("@mot_de_passe", SqlDbType.VarChar, 255).Value = mot_de_passe;
 
                 connexion.Open();
 
                 object result = commande.ExecuteScalar();
                 return result != null && Convert.ToInt32(result) == 1;
+            }
+        }
+        private bool ValidationRole(string identifiant, string mot_de_passe)
+        {
+            string connectionString = @"Server=MSI;Database=bdd_intermarche;Trusted_Connection=True;TrustServerCertificate=True;";
+            using (SqlConnection connexion = new SqlConnection(connectionString))
+            using (SqlCommand command = new SqlCommand("VerifierRole", connexion))
+            {
+                command.CommandType = CommandType.StoredProcedure;
+                command.Parameters.Add("@identifiant_user", SqlDbType.VarChar, 100).Value = identifiant;
+                command.Parameters.Add("@mot_de_passe", SqlDbType.VarChar, 255).Value = mot_de_passe;
+
+                connexion.Open();
+
+                object result = command.ExecuteScalar();
+                if (Convert.ToInt32(result) == 1)
+                {
+                    Globale.role = 1;
+                    return true;
+                }
+                else
+                {
+                    if (Convert.ToInt32(result) == 2)
+                    {
+                        Globale.role = 2;
+                        return true;
+                    }
+                    else
+                    {
+                        if (Convert.ToInt32(result) == 3)
+                        {
+                            Globale.role = 3;
+                            return true;
+                        }
+                        else
+                        {
+                            return false;
+                        }
+                    }
+                }
             };
         }
+    }
+
         private void VerifieRempli()
         {
             if (!string.IsNullOrEmpty(txt_login.Text) && !string.IsNullOrEmpty(txt_mdp.Text))
