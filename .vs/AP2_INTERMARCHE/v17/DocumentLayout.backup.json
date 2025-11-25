@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\arthu\\Documents\\workspace\\AP2_INTERMARCHE\\",
+  "WorkspaceRootPath": "C:\\Users\\supra\\Documents\\Git\\AP2_INTERMARCHE_T\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|c:\\users\\arthu\\documents\\workspace\\ap2_intermarche\\ap2_intermarche\\accueil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|c:\\users\\supra\\documents\\git\\ap2_intermarche_t\\ap2_intermarche\\accueil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|solutionrelative:ap2_intermarche\\accueil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|c:\\users\\arthu\\documents\\workspace\\ap2_intermarche\\ap2_intermarche\\accueil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|C:\\Users\\supra\\Documents\\Git\\AP2_INTERMARCHE_T\\ap2_intermarche\\accueil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|solutionrelative:ap2_intermarche\\accueil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -18,21 +18,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Accueil.cs",
-              "DocumentMoniker": "C:\\Users\\arthu\\Documents\\workspace\\AP2_INTERMARCHE\\AP2_INTERMARCHE\\Accueil.cs",
+              "DocumentMoniker": "C:\\Users\\supra\\Documents\\Git\\AP2_INTERMARCHE_T\\AP2_INTERMARCHE\\Accueil.cs",
               "RelativeDocumentMoniker": "AP2_INTERMARCHE\\Accueil.cs",
-              "ToolTip": "C:\\Users\\arthu\\Documents\\workspace\\AP2_INTERMARCHE\\AP2_INTERMARCHE\\Accueil.cs*",
-              "RelativeToolTip": "AP2_INTERMARCHE\\Accueil.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\supra\\Documents\\Git\\AP2_INTERMARCHE_T\\AP2_INTERMARCHE\\Accueil.cs",
+              "RelativeToolTip": "AP2_INTERMARCHE\\Accueil.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-18T13:51:39.516Z",
               "EditorCaption": ""
@@ -41,13 +37,12 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Accueil.cs [Conception]",
-              "DocumentMoniker": "C:\\Users\\arthu\\Documents\\workspace\\AP2_INTERMARCHE\\AP2_INTERMARCHE\\Accueil.cs",
+              "DocumentMoniker": "C:\\Users\\supra\\Documents\\Git\\AP2_INTERMARCHE_T\\AP2_INTERMARCHE\\Accueil.cs",
               "RelativeDocumentMoniker": "AP2_INTERMARCHE\\Accueil.cs",
               "ToolTip": "C:\\Users\\arthu\\Documents\\workspace\\AP2_INTERMARCHE\\AP2_INTERMARCHE\\Accueil.cs [Conception]*",
-              "RelativeToolTip": "AP2_INTERMARCHE\\Accueil.cs [Conception]*",
+              "RelativeToolTip": "..\\..\\..\\..\\arthu\\Documents\\workspace\\AP2_INTERMARCHE\\AP2_INTERMARCHE\\Accueil.cs [Conception]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T13:41:27.757Z",
-              "EditorCaption": " [Conception]"
+              "WhenOpened": "2025-11-18T13:41:27.757Z"
             }
           ]
         }

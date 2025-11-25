@@ -61,6 +61,7 @@
             txt_login.Name = "txt_login";
             txt_login.Size = new Size(125, 27);
             txt_login.TabIndex = 2;
+            txt_login.TextChanged += txt_login_TextChanged;
             // 
             // txt_mdp
             // 
@@ -68,15 +69,18 @@
             txt_mdp.Name = "txt_mdp";
             txt_mdp.Size = new Size(125, 27);
             txt_mdp.TabIndex = 3;
+            txt_mdp.TextChanged += txt_mdp_TextChanged;
             // 
             // btn_login
             // 
+            btn_login.Enabled = false;
             btn_login.Location = new Point(554, 432);
             btn_login.Name = "btn_login";
             btn_login.Size = new Size(144, 55);
             btn_login.TabIndex = 4;
             btn_login.Text = "button1";
             btn_login.UseVisualStyleBackColor = true;
+            btn_login.Click += btn_login_Click;
             // 
             // label2
             // 
@@ -110,6 +114,7 @@
             Controls.Add(label1);
             Name = "Accueil";
             Text = "Form1";
+            Load += Accueil_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
