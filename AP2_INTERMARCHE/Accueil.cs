@@ -19,7 +19,7 @@ namespace AP2_INTERMARCHE
         {
             string id = txt_login.Text.Trim();
             string mdp = txt_mdp.Text;
-
+            global.connection = @"Server=LAPTOP-C8LQR30P;Database=bdd_intermarche;Trusted_Connection=True;TrustServerCertificate=True;";
             if (ValidationIdentitee(id, mdp))
             {
                 if(ValidationRole(id, mdp))
