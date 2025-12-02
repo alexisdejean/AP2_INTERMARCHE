@@ -49,6 +49,7 @@
             ListeCommande.TabIndex = 0;
             ListeCommande.UseCompatibleStateImageBehavior = false;
             ListeCommande.View = View.Details;
+            ListeCommande.SelectedIndexChanged += ListeCommande_SelectedIndexChanged;
             // 
             // columnHeader1
             // 
@@ -113,6 +114,7 @@
             Controls.Add(ListeCommande);
             Name = "Notification_C";
             Text = "Notification_C";
+            Load += Notification_C_Load;
             ((System.ComponentModel.ISupportInitialize)nb_produit).EndInit();
             ResumeLayout(false);
         }
