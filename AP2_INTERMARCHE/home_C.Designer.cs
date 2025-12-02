@@ -49,12 +49,14 @@
             btn_log.Name = "btn_log";
             btn_log.Size = new Size(101, 24);
             btn_log.Text = "Log produit";
+            btn_log.Click += btn_log_Click;
             // 
             // btn_commande
             // 
             btn_commande.Name = "btn_commande";
             btn_commande.Size = new Size(142, 24);
             btn_commande.Text = "Alerte commande";
+            btn_commande.Click += btn_commande_Click;
             // 
             // home_C
             // 
