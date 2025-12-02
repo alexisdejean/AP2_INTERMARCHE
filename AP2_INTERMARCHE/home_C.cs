@@ -16,5 +16,17 @@ namespace AP2_INTERMARCHE
         {
             InitializeComponent();
         }
+
+        private void btn_log_Click(object sender, EventArgs e)
+        {
+            Log_produit_C log = new Log_produit_C();
+            log.Show();
+        }
+
+        private void btn_commande_Click(object sender, EventArgs e)
+        {
+            Notification_C commande = new Notification_C();
+            commande.Show();
+        }
     }
 }
