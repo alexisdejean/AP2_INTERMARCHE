@@ -29,25 +29,26 @@
         private void InitializeComponent()
         {
             menuStrip1 = new MenuStrip();
-            btn_commande = new ToolStripMenuItem();
+            btn_Commande = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
             // 
             menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { btn_commande });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { btn_Commande });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(800, 28);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
-            // btn_commande
+            // btn_Commande
             // 
-            btn_commande.Name = "btn_commande";
-            btn_commande.Size = new Size(100, 24);
-            btn_commande.Text = "Commande";
+            btn_Commande.Name = "btn_Commande";
+            btn_Commande.Size = new Size(100, 24);
+            btn_Commande.Text = "Commande";
+            btn_Commande.Click += btn_Commande_Click;
             // 
             // home_P
             // 
@@ -67,6 +68,6 @@
         #endregion
 
         private MenuStrip menuStrip1;
-        private ToolStripMenuItem btn_commande;
+        private ToolStripMenuItem btn_Commande;
     }
 }
