@@ -38,19 +38,15 @@
   "WorkspaceRootPath": "C:\\Users\\arthu\\Documents\\workspace\\AP2_INTERMARCHE\\AP2_INTERMARCHE\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|c:\\users\\arthu\\documents\\workspace\\ap2_intermarche\\ap2_intermarche\\ap2_intermarche\\home_p.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|solutionrelative:ap2_intermarche\\home_p.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|c:\\users\\arthu\\documents\\workspace\\ap2_intermarche\\ap2_intermarche\\ap2_intermarche\\attrib_com_r.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|solutionrelative:ap2_intermarche\\attrib_com_r.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|c:\\users\\arthu\\documents\\workspace\\ap2_intermarche\\ap2_intermarche\\ap2_intermarche\\home_p.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|solutionrelative:ap2_intermarche\\home_p.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|c:\\users\\arthu\\documents\\workspace\\ap2_intermarche\\ap2_intermarche\\ap2_intermarche\\home_r.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|solutionrelative:ap2_intermarche\\home_r.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|c:\\users\\arthu\\documents\\workspace\\ap2_intermarche\\ap2_intermarche\\ap2_intermarche\\accueil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|solutionrelative:ap2_intermarche\\accueil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|C:\\Users\\arthu\\Documents\\workspace\\AP2_INTERMARCHE\\AP2_INTERMARCHE\\ap2_intermarche\\home_r.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|c:\\users\\arthu\\documents\\workspace\\ap2_intermarche\\ap2_intermarche\\ap2_intermarche\\home_r.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|solutionrelative:ap2_intermarche\\home_r.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -60,7 +56,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|c:\\users\\arthu\\documents\\workspace\\ap2_intermarche\\ap2_intermarche\\ap2_intermarche\\global.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|solutionrelative:ap2_intermarche\\global.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+<<<<<<< Updated upstream
 >>>>>>> origin/dev
+=======
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|c:\\users\\arthu\\documents\\workspace\\ap2_intermarche\\ap2_intermarche\\ap2_intermarche\\accueil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|solutionrelative:ap2_intermarche\\accueil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> Stashed changes
     }
   ],
   "DocumentGroupContainers": [
@@ -70,25 +73,16 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< Updated upstream
 <<<<<<< HEAD
           "SelectedChildIndex": 1,
 =======
           "SelectedChildIndex": 0,
 >>>>>>> origin/dev
+=======
+          "SelectedChildIndex": 2,
+>>>>>>> Stashed changes
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "home_P.cs",
-              "DocumentMoniker": "C:\\Users\\arthu\\Documents\\workspace\\AP2_INTERMARCHE\\AP2_INTERMARCHE\\AP2_INTERMARCHE\\home_P.cs",
-              "RelativeDocumentMoniker": "AP2_INTERMARCHE\\home_P.cs",
-              "ToolTip": "C:\\Users\\arthu\\Documents\\workspace\\AP2_INTERMARCHE\\AP2_INTERMARCHE\\AP2_INTERMARCHE\\home_P.cs",
-              "RelativeToolTip": "AP2_INTERMARCHE\\home_P.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAA3wBEAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-02T14:16:30.426Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
@@ -110,6 +104,7 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+<<<<<<< Updated upstream
               "Title": "Notification_C.cs [Conception]",
               "DocumentMoniker": "C:\\Users\\supra\\Documents\\Git\\AP2_INTERMARCHE_T\\AP2_INTERMARCHE\\Notification_C.cs",
               "RelativeDocumentMoniker": "AP2_INTERMARCHE\\Notification_C.cs",
@@ -143,12 +138,33 @@
               "RelativeDocumentMoniker": "AP2_INTERMARCHE\\home_P.cs",
               "ToolTip": "C:\\Users\\arthu\\Documents\\workspace\\AP2_INTERMARCHE\\AP2_INTERMARCHE\\AP2_INTERMARCHE\\home_P.cs [Conception]",
               "RelativeToolTip": "AP2_INTERMARCHE\\home_P.cs [Conception]",
+=======
+              "Title": "home_R.cs",
+              "DocumentMoniker": "C:\\Users\\arthu\\Documents\\workspace\\AP2_INTERMARCHE\\AP2_INTERMARCHE\\AP2_INTERMARCHE\\home_R.cs",
+              "RelativeDocumentMoniker": "AP2_INTERMARCHE\\home_R.cs",
+              "ToolTip": "C:\\Users\\arthu\\Documents\\workspace\\AP2_INTERMARCHE\\AP2_INTERMARCHE\\AP2_INTERMARCHE\\home_R.cs",
+              "RelativeToolTip": "AP2_INTERMARCHE\\home_R.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA7wCAAAAAfAAAAAAAAAA==",
+>>>>>>> Stashed changes
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-02T14:16:26.323Z",
+              "WhenOpened": "2025-12-02T15:46:16.285Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "attrib_com_R.cs [Conception]",
+              "DocumentMoniker": "C:\\Users\\arthu\\Documents\\workspace\\AP2_INTERMARCHE\\AP2_INTERMARCHE\\AP2_INTERMARCHE\\attrib_com_R.cs",
+              "RelativeDocumentMoniker": "AP2_INTERMARCHE\\attrib_com_R.cs",
+              "ToolTip": "C:\\Users\\arthu\\Documents\\workspace\\AP2_INTERMARCHE\\AP2_INTERMARCHE\\AP2_INTERMARCHE\\attrib_com_R.cs [Conception]",
+              "RelativeToolTip": "AP2_INTERMARCHE\\attrib_com_R.cs [Conception]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T15:45:58.171Z",
               "EditorCaption": " [Conception]"
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
 <<<<<<< HEAD
               "DocumentIndex": 7,
               "Title": "home_R.cs [Conception]",
@@ -199,17 +215,21 @@
               "EditorCaption": " [Conception]"
 =======
               "DocumentIndex": 3,
+=======
+              "DocumentIndex": 2,
+>>>>>>> Stashed changes
               "Title": "home_R.cs [Conception]",
               "DocumentMoniker": "C:\\Users\\arthu\\Documents\\workspace\\AP2_INTERMARCHE\\AP2_INTERMARCHE\\AP2_INTERMARCHE\\home_R.cs",
               "RelativeDocumentMoniker": "AP2_INTERMARCHE\\home_R.cs",
               "ToolTip": "C:\\Users\\arthu\\Documents\\workspace\\AP2_INTERMARCHE\\AP2_INTERMARCHE\\AP2_INTERMARCHE\\home_R.cs [Conception]",
               "RelativeToolTip": "AP2_INTERMARCHE\\home_R.cs [Conception]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-02T13:57:14.359Z"
+              "WhenOpened": "2025-12-02T15:34:05.377Z",
+              "EditorCaption": " [Conception]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "Global.cs",
               "DocumentMoniker": "C:\\Users\\arthu\\Documents\\workspace\\AP2_INTERMARCHE\\AP2_INTERMARCHE\\AP2_INTERMARCHE\\Global.cs",
               "RelativeDocumentMoniker": "AP2_INTERMARCHE\\Global.cs",
@@ -217,11 +237,12 @@
               "RelativeToolTip": "AP2_INTERMARCHE\\Global.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-02T13:57:14.692Z"
+              "WhenOpened": "2025-12-02T13:57:14.692Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Accueil.cs",
               "DocumentMoniker": "C:\\Users\\arthu\\Documents\\workspace\\AP2_INTERMARCHE\\AP2_INTERMARCHE\\AP2_INTERMARCHE\\Accueil.cs",
               "RelativeDocumentMoniker": "AP2_INTERMARCHE\\Accueil.cs",
@@ -234,15 +255,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Accueil.cs [Conception]",
               "DocumentMoniker": "C:\\Users\\arthu\\Documents\\workspace\\AP2_INTERMARCHE\\AP2_INTERMARCHE\\AP2_INTERMARCHE\\Accueil.cs",
               "RelativeDocumentMoniker": "AP2_INTERMARCHE\\Accueil.cs",
+<<<<<<< Updated upstream
               "ToolTip": "C:\\Users\\supra\\Documents\\Git\\AP2_INTERMARCHE_T\\AP2_INTERMARCHE\\Accueil.cs [Conception]",
               "RelativeToolTip": "..\\..\\..\\..\\..\\supra\\Documents\\Git\\AP2_INTERMARCHE_T\\AP2_INTERMARCHE\\Accueil.cs [Conception]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
               "WhenOpened": "2025-12-02T13:57:14.922Z"
 >>>>>>> origin/dev
+=======
+              "ToolTip": "C:\\Users\\arthu\\Documents\\workspace\\AP2_INTERMARCHE\\AP2_INTERMARCHE\\AP2_INTERMARCHE\\Accueil.cs [Conception]",
+              "RelativeToolTip": "AP2_INTERMARCHE\\Accueil.cs [Conception]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T13:57:14.922Z",
+              "EditorCaption": " [Conception]"
+>>>>>>> Stashed changes
             }
           ]
         }

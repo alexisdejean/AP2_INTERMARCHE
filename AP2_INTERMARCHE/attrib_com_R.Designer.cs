@@ -36,6 +36,8 @@
             columnHeader4 = new ColumnHeader();
             columnHeader5 = new ColumnHeader();
             columnHeader6 = new ColumnHeader();
+            Zone = new ComboBox();
+            Valider_attrib = new Button();
             SuspendLayout();
             // 
             // listView1
@@ -67,9 +69,9 @@
             // listView2
             // 
             listView2.Columns.AddRange(new ColumnHeader[] { columnHeader4, columnHeader5, columnHeader6 });
-            listView2.Location = new Point(540, 51);
+            listView2.Location = new Point(535, 51);
             listView2.Name = "listView2";
-            listView2.Size = new Size(248, 315);
+            listView2.Size = new Size(253, 315);
             listView2.TabIndex = 1;
             listView2.UseCompatibleStateImageBehavior = false;
             listView2.View = View.Details;
@@ -90,11 +92,30 @@
             columnHeader6.TextAlign = HorizontalAlignment.Right;
             columnHeader6.Width = 90;
             // 
+            // Zone
+            // 
+            Zone.FormattingEnabled = true;
+            Zone.Location = new Point(333, 111);
+            Zone.Name = "Zone";
+            Zone.Size = new Size(151, 28);
+            Zone.TabIndex = 2;
+            // 
+            // Valider_attrib
+            // 
+            Valider_attrib.Location = new Point(360, 237);
+            Valider_attrib.Name = "Valider_attrib";
+            Valider_attrib.Size = new Size(94, 29);
+            Valider_attrib.TabIndex = 3;
+            Valider_attrib.Text = "Valider";
+            Valider_attrib.UseVisualStyleBackColor = true;
+            // 
             // attrib_com_R
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(Valider_attrib);
+            Controls.Add(Zone);
             Controls.Add(listView2);
             Controls.Add(listView1);
             Name = "attrib_com_R";
@@ -112,5 +133,7 @@
         private ColumnHeader columnHeader4;
         private ColumnHeader columnHeader5;
         private ColumnHeader columnHeader6;
+        private ComboBox Zone;
+        private Button Valider_attrib;
     }
 }
