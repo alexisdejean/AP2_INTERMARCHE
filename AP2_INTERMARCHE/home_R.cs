@@ -16,5 +16,21 @@ namespace AP2_INTERMARCHE
         {
             InitializeComponent();
         }
+
+        private void btn_information_Click(object sender, EventArgs e)
+        {
+            information_cmd_R info = new information_cmd_R();
+            info.MdiParent = this;
+            info.WindowState = FormWindowState.Maximized;
+            info.Show();
+        }
+
+        private void btn_atrib_Click(object sender, EventArgs e)
+        {
+            attrib_com_R attribution = new attrib_com_R();
+            attribution.MdiParent = this;
+            attribution.WindowState = FormWindowState.Maximized;
+            attribution.Show();
+        }
     }
 }

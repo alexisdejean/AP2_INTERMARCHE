@@ -49,12 +49,14 @@
             btn_information.Name = "btn_information";
             btn_information.Size = new Size(186, 24);
             btn_information.Text = "Informations commande";
+            btn_information.Click += btn_information_Click;
             // 
             // btn_atrib
             // 
             btn_atrib.Name = "btn_atrib";
             btn_atrib.Size = new Size(169, 24);
             btn_atrib.Text = "Atribution commande";
+            btn_atrib.Click += btn_atrib_Click;
             // 
             // home_R
             // 
@@ -62,6 +64,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(menuStrip1);
+            IsMdiContainer = true;
             MainMenuStrip = menuStrip1;
             Name = "home_R";
             Text = "home_R";

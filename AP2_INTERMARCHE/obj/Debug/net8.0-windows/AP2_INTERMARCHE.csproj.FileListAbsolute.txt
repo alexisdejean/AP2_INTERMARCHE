@@ -138,3 +138,6 @@ C:\Users\arthu\Documents\workspace\AP2_INTERMARCHE\AP2_INTERMARCHE\AP2_INTERMARC
 C:\Users\arthu\Documents\workspace\AP2_INTERMARCHE\AP2_INTERMARCHE\AP2_INTERMARCHE\obj\Debug\net8.0-windows\AP2_INTERMARCHE.genruntimeconfig.cache
 C:\Users\arthu\Documents\workspace\AP2_INTERMARCHE\AP2_INTERMARCHE\AP2_INTERMARCHE\obj\Debug\net8.0-windows\ref\AP2_INTERMARCHE.dll
 >>>>>>> origin/dev
+C:\Users\arthu\Documents\workspace\AP2_INTERMARCHE\AP2_INTERMARCHE\AP2_INTERMARCHE\obj\Debug\net8.0-windows\AP2_INTERMARCHE.Commande_P.resources
+C:\Users\arthu\Documents\workspace\AP2_INTERMARCHE\AP2_INTERMARCHE\AP2_INTERMARCHE\obj\Debug\net8.0-windows\AP2_INTERMARCHE.Log_produit_C.resources
+C:\Users\arthu\Documents\workspace\AP2_INTERMARCHE\AP2_INTERMARCHE\AP2_INTERMARCHE\obj\Debug\net8.0-windows\AP2_INTERMARCHE.Notification_C.resources
