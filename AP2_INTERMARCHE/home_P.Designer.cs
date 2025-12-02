@@ -29,26 +29,26 @@
         private void InitializeComponent()
         {
             menuStrip1 = new MenuStrip();
-            btn_Commande = new ToolStripMenuItem();
+            btn_voir_commande = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
             // 
             menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { btn_Commande });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { btn_voir_commande });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(800, 28);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
-            // btn_Commande
+            // btn_voir_commande
             // 
-            btn_Commande.Name = "btn_Commande";
-            btn_Commande.Size = new Size(100, 24);
-            btn_Commande.Text = "Commande";
-            btn_Commande.Click += btn_Commande_Click;
+            btn_voir_commande.Name = "btn_voir_commande";
+            btn_voir_commande.Size = new Size(100, 24);
+            btn_voir_commande.Text = "Commande";
+            btn_voir_commande.Click += btn_voir_commande_Click;
             // 
             // home_P
             // 
@@ -56,7 +56,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(menuStrip1);
-            MainMenuStrip = menuStrip1;
+            IsMdiContainer = true;
             Name = "home_P";
             Text = "home_P";
             menuStrip1.ResumeLayout(false);
@@ -68,6 +68,6 @@
         #endregion
 
         private MenuStrip menuStrip1;
-        private ToolStripMenuItem btn_Commande;
+        private ToolStripMenuItem btn_voir_commande;
     }
 }
