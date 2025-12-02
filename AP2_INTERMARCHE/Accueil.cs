@@ -80,7 +80,7 @@ namespace AP2_INTERMARCHE
             using (SqlCommand command = new SqlCommand("VerifierRole", connexion))
             {
                 command.CommandType = CommandType.StoredProcedure;
-                command.Parameters.Add("@identifiant_user", SqlDbType.VarChar, 100).Value = identifiant;
+                command.Parameters.Add("@identifiant", SqlDbType.VarChar, 100).Value = identifiant;
 
                 connexion.Open();
 

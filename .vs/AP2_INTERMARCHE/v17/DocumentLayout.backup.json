@@ -34,8 +34,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -47,6 +51,19 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-25T15:07:10.813Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Accueil.cs",
+              "DocumentMoniker": "C:\\Users\\supra\\Documents\\Git\\AP2_INTERMARCHE_T\\AP2_INTERMARCHE\\Accueil.cs",
+              "RelativeDocumentMoniker": "AP2_INTERMARCHE\\Accueil.cs",
+              "ToolTip": "C:\\Users\\supra\\Documents\\Git\\AP2_INTERMARCHE_T\\AP2_INTERMARCHE\\Accueil.cs",
+              "RelativeToolTip": "AP2_INTERMARCHE\\Accueil.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAIAzwBgAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T13:51:39.516Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -80,19 +97,6 @@
               "RelativeToolTip": "AP2_INTERMARCHE\\home_R.cs [Conception]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-25T13:31:01.316Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Accueil.cs",
-              "DocumentMoniker": "C:\\Users\\supra\\Documents\\Git\\AP2_INTERMARCHE_T\\AP2_INTERMARCHE\\Accueil.cs",
-              "RelativeDocumentMoniker": "AP2_INTERMARCHE\\Accueil.cs",
-              "ToolTip": "C:\\Users\\supra\\Documents\\Git\\AP2_INTERMARCHE_T\\AP2_INTERMARCHE\\Accueil.cs",
-              "RelativeToolTip": "AP2_INTERMARCHE\\Accueil.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T13:51:39.516Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
