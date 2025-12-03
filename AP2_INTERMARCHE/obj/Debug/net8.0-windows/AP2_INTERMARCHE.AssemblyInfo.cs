@@ -14,11 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AP2_INTERMARCHE")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< HEAD
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e4e09cac811e15572c53205aec8ec7b8a4368d76")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b78130cf6679ba2c9b235da3d7eb3d8a24ee1be8")]
->>>>>>> origin/dev
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d49c3df704ed3b24b4d4699458e78cb10c6b129d")]
 [assembly: System.Reflection.AssemblyProductAttribute("AP2_INTERMARCHE")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AP2_INTERMARCHE")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
