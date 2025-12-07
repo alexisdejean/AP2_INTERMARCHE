@@ -49,7 +49,7 @@
             ListeCommande.TabIndex = 0;
             ListeCommande.UseCompatibleStateImageBehavior = false;
             ListeCommande.View = View.Details;
-            ListeCommande.SelectedIndexChanged += ListeCommande_SelectedIndexChanged_1;
+            ListeCommande.SelectedIndexChanged += ListeCommande_SelectedIndexChanged;
             // 
             // columnHeader1
             // 
