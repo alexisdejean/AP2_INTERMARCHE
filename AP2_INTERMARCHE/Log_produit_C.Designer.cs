@@ -28,22 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            listView1 = new ListView();
+            List_Logs = new ListView();
             columnHeader1 = new ColumnHeader();
             columnHeader2 = new ColumnHeader();
             columnHeader3 = new ColumnHeader();
             columnHeader4 = new ColumnHeader();
+            columnHeader5 = new ColumnHeader();
+            columnHeader6 = new ColumnHeader();
             SuspendLayout();
             // 
-            // listView1
+            // List_Logs
             // 
-            listView1.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3, columnHeader4 });
-            listView1.Location = new Point(46, 35);
-            listView1.Name = "listView1";
-            listView1.Size = new Size(700, 378);
-            listView1.TabIndex = 0;
-            listView1.UseCompatibleStateImageBehavior = false;
-            listView1.View = View.Details;
+            List_Logs.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3, columnHeader4, columnHeader5, columnHeader6 });
+            List_Logs.Location = new Point(46, 35);
+            List_Logs.Name = "List_Logs";
+            List_Logs.Size = new Size(700, 378);
+            List_Logs.TabIndex = 0;
+            List_Logs.UseCompatibleStateImageBehavior = false;
+            List_Logs.View = View.Details;
             // 
             // columnHeader1
             // 
@@ -64,12 +66,20 @@
             columnHeader4.Text = "Code stockage";
             columnHeader4.Width = 160;
             // 
+            // columnHeader5
+            // 
+            columnHeader5.Text = "Produit";
+            // 
+            // columnHeader6
+            // 
+            columnHeader6.Text = "Quantitée";
+            // 
             // Log_produit_C
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(listView1);
+            Controls.Add(List_Logs);
             Name = "Log_produit_C";
             Text = "Log_produit_C";
             Load += Log_produit_C_Load;
@@ -78,10 +88,12 @@
 
         #endregion
 
-        private ListView listView1;
+        private ListView List_Logs;
         private ColumnHeader columnHeader1;
         private ColumnHeader columnHeader2;
         private ColumnHeader columnHeader3;
         private ColumnHeader columnHeader4;
+        private ColumnHeader columnHeader5;
+        private ColumnHeader columnHeader6;
     }
 }

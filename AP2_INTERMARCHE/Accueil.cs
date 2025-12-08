@@ -30,6 +30,7 @@ namespace AP2_INTERMARCHE
                     {
                         home_R connecte = new home_R();
                         connecte.Show();
+                        this.Hide();
                     }
                     else
                     {
@@ -37,11 +38,13 @@ namespace AP2_INTERMARCHE
                         {
                             home_P connectet = new home_P();
                             connectet.Show();
+                            this.Hide();
                         }
                         else
                         {
                             home_C connectee = new home_C();
                             connectee.Show();
+                            this.Hide();
                         }
                     }
                     

@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            listView1 = new ListView();
+            List_Commande = new ListView();
             columnHeader1 = new ColumnHeader();
             columnHeader2 = new ColumnHeader();
             columnHeader3 = new ColumnHeader();
@@ -36,19 +36,20 @@
             columnHeader4 = new ColumnHeader();
             columnHeader5 = new ColumnHeader();
             columnHeader6 = new ColumnHeader();
-            Zone = new ComboBox();
+            cb_Zone = new ComboBox();
             Valider_attrib = new Button();
             SuspendLayout();
             // 
-            // listView1
+            // List_Commande
             // 
-            listView1.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3 });
-            listView1.Location = new Point(12, 51);
-            listView1.Name = "listView1";
-            listView1.Size = new Size(284, 315);
-            listView1.TabIndex = 0;
-            listView1.UseCompatibleStateImageBehavior = false;
-            listView1.View = View.Details;
+            List_Commande.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3 });
+            List_Commande.Location = new Point(12, 51);
+            List_Commande.Name = "List_Commande";
+            List_Commande.Size = new Size(284, 315);
+            List_Commande.TabIndex = 0;
+            List_Commande.UseCompatibleStateImageBehavior = false;
+            List_Commande.View = View.Details;
+            List_Commande.SelectedIndexChanged += List_Commande_SelectedIndexChanged;
             // 
             // columnHeader1
             // 
@@ -92,13 +93,14 @@
             columnHeader6.TextAlign = HorizontalAlignment.Right;
             columnHeader6.Width = 90;
             // 
-            // Zone
+            // cb_Zone
             // 
-            Zone.FormattingEnabled = true;
-            Zone.Location = new Point(333, 111);
-            Zone.Name = "Zone";
-            Zone.Size = new Size(151, 28);
-            Zone.TabIndex = 2;
+            cb_Zone.FormattingEnabled = true;
+            cb_Zone.Location = new Point(333, 111);
+            cb_Zone.Name = "cb_Zone";
+            cb_Zone.Size = new Size(151, 28);
+            cb_Zone.TabIndex = 2;
+            cb_Zone.SelectedIndexChanged += cb_Zone_SelectedIndexChanged;
             // 
             // Valider_attrib
             // 
@@ -115,17 +117,18 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(Valider_attrib);
-            Controls.Add(Zone);
+            Controls.Add(cb_Zone);
             Controls.Add(listView2);
-            Controls.Add(listView1);
+            Controls.Add(List_Commande);
             Name = "attrib_com_R";
             Text = "attrib_com_R";
+            Load += attrib_com_R_Load;
             ResumeLayout(false);
         }
 
         #endregion
 
-        private ListView listView1;
+        private ListView List_Commande;
         private ColumnHeader columnHeader1;
         private ColumnHeader columnHeader2;
         private ColumnHeader columnHeader3;
@@ -133,7 +136,7 @@
         private ColumnHeader columnHeader4;
         private ColumnHeader columnHeader5;
         private ColumnHeader columnHeader6;
-        private ComboBox Zone;
+        private ComboBox cb_Zone;
         private Button Valider_attrib;
     }
 }

@@ -44,7 +44,33 @@ namespace AP2_INTERMARCHE
 
         private void ListeCommande_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+            object objet = ListeCommande.FocusedItem;
+            MessageBox.Show("Coucou", objet.ToString());
+        }
+
+        private void changement_valider_Click(object sender, EventArgs e)
+        {
+            string produit = cb_produits.Text;
+            // VERIFIE LA QUANITEE EN MANQUE POUR LA COMMANDE, RENVOIE LA QUANTITEE MANQUANTE
+            int result = 0; // VARIABLE DE SUBSTITUTION
+            if (result > 0)
+            {
+                // AJOUTE LA QUANTITEE EN MANQUE POUR LE PRODUIT DANS LA BASE DE DONNÉES
+                bool valid = true;
+                if (valid)
+                {
+                    MessageBox.Show("Quantitée bien mise à jour !", "Information");
+                }
+                else
+                {
+                    MessageBox.Show("Problème d'insertion", "Erreur");
+                }
+                
+            }
+            else
+            {
+                MessageBox.Show("Il ne manque pas de stock concernant le produit sélectionné", "Erreur");
+            }
         }
     }
 }

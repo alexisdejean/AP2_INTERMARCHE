@@ -35,17 +35,17 @@
             columnHeader3 = new ColumnHeader();
             columnHeader4 = new ColumnHeader();
             columnHeader5 = new ColumnHeader();
-            nb_produit = new NumericUpDown();
             changement_valider = new Button();
-            ((System.ComponentModel.ISupportInitialize)nb_produit).BeginInit();
+            cb_produits = new ComboBox();
+            columnHeader6 = new ColumnHeader();
             SuspendLayout();
             // 
             // ListeCommande
             // 
-            ListeCommande.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2 });
-            ListeCommande.Location = new Point(37, 26);
+            ListeCommande.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2, columnHeader6 });
+            ListeCommande.Location = new Point(26, 26);
             ListeCommande.Name = "ListeCommande";
-            ListeCommande.Size = new Size(230, 276);
+            ListeCommande.Size = new Size(291, 276);
             ListeCommande.TabIndex = 0;
             ListeCommande.UseCompatibleStateImageBehavior = false;
             ListeCommande.View = View.Details;
@@ -87,13 +87,6 @@
             columnHeader5.TextAlign = HorizontalAlignment.Center;
             columnHeader5.Width = 80;
             // 
-            // nb_produit
-            // 
-            nb_produit.Location = new Point(571, 335);
-            nb_produit.Name = "nb_produit";
-            nb_produit.Size = new Size(150, 27);
-            nb_produit.TabIndex = 2;
-            // 
             // changement_valider
             // 
             changement_valider.Location = new Point(599, 390);
@@ -102,20 +95,32 @@
             changement_valider.TabIndex = 3;
             changement_valider.Text = "Valider";
             changement_valider.UseVisualStyleBackColor = true;
+            changement_valider.Click += changement_valider_Click;
+            // 
+            // cb_produits
+            // 
+            cb_produits.FormattingEnabled = true;
+            cb_produits.Location = new Point(568, 336);
+            cb_produits.Name = "cb_produits";
+            cb_produits.Size = new Size(151, 28);
+            cb_produits.TabIndex = 4;
+            // 
+            // columnHeader6
+            // 
+            columnHeader6.Text = "Commande";
             // 
             // Notification_C
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(cb_produits);
             Controls.Add(changement_valider);
-            Controls.Add(nb_produit);
             Controls.Add(ListeProduit);
             Controls.Add(ListeCommande);
             Name = "Notification_C";
             Text = "Notification_C";
             Load += Notification_C_Load;
-            ((System.ComponentModel.ISupportInitialize)nb_produit).EndInit();
             ResumeLayout(false);
         }
 
@@ -128,7 +133,8 @@
         private ColumnHeader columnHeader3;
         private ColumnHeader columnHeader4;
         private ColumnHeader columnHeader5;
-        private NumericUpDown nb_produit;
         private Button changement_valider;
+        private ComboBox cb_produits;
+        private ColumnHeader columnHeader6;
     }
 }
