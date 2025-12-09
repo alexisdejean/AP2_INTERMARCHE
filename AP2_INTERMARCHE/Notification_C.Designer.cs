@@ -37,8 +37,9 @@ namespace AP2_INTERMARCHE
             columnHeader4 = new ColumnHeader();
             columnHeader5 = new ColumnHeader();
             changement_valider = new Button();
-            numericUpDown1 = new NumericUpDown();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
+            num_quantite = new NumericUpDown();
+            btn_terminer = new Button();
+            ((System.ComponentModel.ISupportInitialize)num_quantite).BeginInit();
             SuspendLayout();
             // 
             // ListeCommande
@@ -71,6 +72,7 @@ namespace AP2_INTERMARCHE
             // ListeProduit
             // 
             ListeProduit.Columns.AddRange(new ColumnHeader[] { columnHeader3, columnHeader4, columnHeader5 });
+            ListeProduit.Enabled = false;
             ListeProduit.Location = new Point(844, 26);
             ListeProduit.Name = "ListeProduit";
             ListeProduit.Size = new Size(442, 276);
@@ -96,7 +98,8 @@ namespace AP2_INTERMARCHE
             // 
             // changement_valider
             // 
-            changement_valider.Location = new Point(599, 390);
+            changement_valider.Enabled = false;
+            changement_valider.Location = new Point(1024, 390);
             changement_valider.Name = "changement_valider";
             changement_valider.Size = new Size(94, 29);
             changement_valider.TabIndex = 3;
@@ -104,26 +107,39 @@ namespace AP2_INTERMARCHE
             changement_valider.UseVisualStyleBackColor = true;
             changement_valider.Click += changement_valider_Click;
             // 
-            // numericUpDown1
+            // num_quantite
             // 
-            numericUpDown1.Location = new Point(572, 343);
-            numericUpDown1.Name = "numericUpDown1";
-            numericUpDown1.Size = new Size(150, 27);
-            numericUpDown1.TabIndex = 4;
+            num_quantite.Enabled = false;
+            num_quantite.Location = new Point(997, 343);
+            num_quantite.Name = "num_quantite";
+            num_quantite.Size = new Size(150, 27);
+            num_quantite.TabIndex = 4;
+            // 
+            // btn_terminer
+            // 
+            btn_terminer.Enabled = false;
+            btn_terminer.Location = new Point(233, 355);
+            btn_terminer.Name = "btn_terminer";
+            btn_terminer.Size = new Size(192, 64);
+            btn_terminer.TabIndex = 5;
+            btn_terminer.Text = "Terminer Commande";
+            btn_terminer.UseVisualStyleBackColor = true;
+            btn_terminer.Click += btn_terminer_Click;
             // 
             // Notification_C
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1557, 771);
-            Controls.Add(numericUpDown1);
+            ClientSize = new Size(1354, 457);
+            Controls.Add(btn_terminer);
+            Controls.Add(num_quantite);
             Controls.Add(changement_valider);
             Controls.Add(ListeProduit);
             Controls.Add(ListeCommande);
             Name = "Notification_C";
             Text = "Notification_C";
             Load += Notification_C_Load;
-            ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)num_quantite).EndInit();
             ResumeLayout(false);
         }
 
@@ -138,6 +154,7 @@ namespace AP2_INTERMARCHE
         private ColumnHeader columnHeader5;
         private Button changement_valider;
         private ColumnHeader columnHeader6;
-        private NumericUpDown numericUpDown1;
+        private NumericUpDown num_quantite;
+        private Button btn_terminer;
     }
 }

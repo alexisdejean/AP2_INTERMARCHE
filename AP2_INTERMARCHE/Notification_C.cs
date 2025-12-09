@@ -41,6 +41,7 @@ namespace AP2_INTERMARCHE
                     ListeCommande.Items.Add(item);
                 }
                 link.Close();
+                VerifierPermission();
 
 
             }
@@ -48,6 +49,11 @@ namespace AP2_INTERMARCHE
 
         private void ListeCommande_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (ListeCommande.SelectedItems.Count == 0)
+            {
+                return;
+            }
+
             int code = int.Parse(ListeCommande.SelectedItems[0].SubItems[0].Text);
             string connexion = global.connection;
             using SqlConnection link = new SqlConnection(connexion);
@@ -73,6 +79,7 @@ namespace AP2_INTERMARCHE
                     ListeProduit.Items.Add(item);
                 }
                 link.Close();
+                VerifierPermission();
 
 
             }
@@ -81,26 +88,69 @@ namespace AP2_INTERMARCHE
 
         private void changement_valider_Click(object sender, EventArgs e)
         {
-            int code = int.Parse(ListeProduit.SelectedItems[0].SubItems[0].Text); //L'id de la palette qui va être utilisée
-            int quantite = 0; // Quantitée saisie par le Cariste
+            if (ListeCommande.SelectedItems.Count == 0)
+            {
+                return;
+            }
+            int codet = int.Parse(ListeProduit.SelectedItems[0].SubItems[0].Text); //L'id de la palette qui va être utilisée
+            int quantite = (int)num_quantite.Value; // Quantitée saisie par le Cariste
             string connexion = global.connection; // CONNEXION !
             using SqlConnection link = new SqlConnection(connexion);
             using SqlCommand commande = new SqlCommand("QuantiteePalette", link);
             {
                 commande.CommandType = CommandType.StoredProcedure;
-                commande.Parameters.Add("@CodePalette", SqlDbType.Int).Value = code;
+                commande.Parameters.Add("@codePalette", SqlDbType.Int).Value = codet;
                 link.Open();
                 object result = commande.ExecuteScalar();            // RECUPERATION DU RESULTAT     
                 link.Close();
                 int resultat = Convert.ToInt32(result);
-                if (resultat > quantite) // SI Il y'a moins de quantitée saisie par le Cariste que de place sur la palette alors : 
+                using SqlConnection linke = new SqlConnection(connexion);
+                using SqlCommand commandes = new SqlCommand("TrouverQuantiteeProduit", linke);
+                {
+                    commandes.CommandType = CommandType.StoredProcedure;
+                    commandes.Parameters.Add("@CodePalettePrQuantitee", SqlDbType.Int).Value = codet;
+                    link.Open();
+                    object resulta = commande.ExecuteScalar();            // RECUPERATION DU RESULTAT     
+                    link.Close();
+                    int leresult = Convert.ToInt32(resulta);
+                    if (leresult > resultat) // S'il y a plus de produits commandés que de produits disponibles sur la palette
+                    {
+                        if ((resultat + quantite) >= leresult) // Si la somme de la quantitée saisie par le cariste est suprérieure ou égale à la quantité commandée
+                        {
+                            //APPEL D'UNE PROCEDURE STOCKEE DE MODIFICATION DE DONNEES !
+                            using SqlConnection linked = new SqlConnection(connexion);
+                            using SqlCommand command = new SqlCommand("InsertionBASEPalette", linked);
+                            {
+                                commandes.CommandType = CommandType.StoredProcedure;
+                                commandes.Parameters.Add("@NumPalette", SqlDbType.Int).Value = codet;
+                                commandes.Parameters.Add("@quantiteSaisie", SqlDbType.Int).Value = quantite;
+                                link.Open();
+                                link.Close();
+
+                            }
+                           btn_terminer.Enabled = true;
+                        }
+                        else
+                        {
+                            MessageBox.Show("Quantitée saisie impossible !", "Erreur");
+                            return;
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Nul besoin de modifier la quantité de cette palette", "Information");
+                        btn_terminer.Enabled = true;
+                    }
+
+                }
+                /*if (resultat > quantite) // SI Il y'a moins de quantitée saisie par le Cariste que de place sur la palette alors : 
                 {
                     string connetion = global.connection; // CONNEXION !
                     using SqlConnection linke = new SqlConnection(connetion);
                     using SqlCommand commandes = new SqlCommand("TrouverQuantiteeProduit", link);
                     {
                         commandes.CommandType = CommandType.StoredProcedure;
-                        commandes.Parameters.Add("@CodePalettePrQuantitee", SqlDbType.Int).Value = code;
+                        commandes.Parameters.Add("@CodePalettePrQuantitee", SqlDbType.Int).Value = codet;
                         link.Open();
                         object resulta = commande.ExecuteScalar();            // RECUPERATION DU RESULTAT     
                         link.Close();
@@ -120,10 +170,28 @@ namespace AP2_INTERMARCHE
                 else
                 {
                     MessageBox.Show("Il ne manque pas de stock concernant le produit sélectionné", "Erreur");
-                }
+                }*/
 
 
             }
+        }
+        public void VerifierPermission()
+        {
+            if (ListeCommande.Items.Count > 0)
+            {
+                ListeProduit.Enabled = true;
+            }
+            if (ListeProduit.Items.Count > 0)
+            {
+                num_quantite.Enabled = true;
+                changement_valider.Enabled = true;
+            }
+
+        }
+
+        private void btn_terminer_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

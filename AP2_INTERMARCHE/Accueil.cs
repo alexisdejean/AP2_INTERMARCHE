@@ -71,7 +71,6 @@ namespace AP2_INTERMARCHE
                 commande.Parameters.Add("@mot_de_passe", SqlDbType.VarChar, 255).Value = mot_de_passe;
 
                 connexion.Open();
-
                 object result = commande.ExecuteScalar();
                 return result != null && Convert.ToInt32(result) == 1;
 
