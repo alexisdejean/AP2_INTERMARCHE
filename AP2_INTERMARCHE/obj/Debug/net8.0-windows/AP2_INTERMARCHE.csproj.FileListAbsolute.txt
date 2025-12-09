@@ -146,3 +146,5 @@ C:\Users\arthu\Documents\workspace\AP2_INTERMARCHE\AP2_INTERMARCHE\AP2_INTERMARC
 C:\Users\arthu\Documents\workspace\AP2_INTERMARCHE\AP2_INTERMARCHE\AP2_INTERMARCHE\obj\Debug\net8.0-windows\AP2_INTERMARCHE.Notification_C.resources
 C:\Users\supra\Documents\Git\AP2_INTERMARCHE_T\AP2_INTERMARCHE\obj\Debug\net8.0-windows\AP2_INTERMARCHE.attrib_com_R.resources
 C:\Users\supra\Documents\Git\AP2_INTERMARCHE_T\AP2_INTERMARCHE\obj\Debug\net8.0-windows\AP2_INTERMARCHE.information_cmd_R.resources
+C:\Users\arthu\Documents\workspace\AP2_INTERMARCHE\AP2_INTERMARCHE\AP2_INTERMARCHE\obj\Debug\net8.0-windows\AP2_INTERMARCHE.attrib_com_R.resources
+C:\Users\arthu\Documents\workspace\AP2_INTERMARCHE\AP2_INTERMARCHE\AP2_INTERMARCHE\obj\Debug\net8.0-windows\AP2_INTERMARCHE.information_cmd_R.resources
