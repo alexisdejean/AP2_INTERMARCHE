@@ -22,7 +22,7 @@ namespace AP2_INTERMARCHE
         {
             string connexion = global.connection;
             using SqlConnection link = new SqlConnection(connexion);
-            using SqlCommand commande = new SqlCommand("Afficherlesnotifs", link);
+            using SqlCommand commande = new SqlCommand("AfficherLesLogs", link);
             {
                 commande.CommandType = CommandType.StoredProcedure;
                 link.Open();
@@ -40,6 +40,11 @@ namespace AP2_INTERMARCHE
 
 
             }
+        }
+
+        private void List_Logs_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -46,6 +46,7 @@
             List_Logs.TabIndex = 0;
             List_Logs.UseCompatibleStateImageBehavior = false;
             List_Logs.View = View.Details;
+            List_Logs.SelectedIndexChanged += List_Logs_SelectedIndexChanged;
             // 
             // columnHeader1
             // 

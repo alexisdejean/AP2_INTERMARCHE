@@ -44,8 +44,8 @@ namespace AP2_INTERMARCHE
 
         private void ListeCommande_SelectedIndexChanged(object sender, EventArgs e)
         {
-            object objet = ListeCommande.FocusedItem;
-            MessageBox.Show("Coucou", objet.ToString());
+            var item = ListeCommande.SelectedItems;
+            MessageBox.Show("Coucou", item.ToString());
         }
 
         private void changement_valider_Click(object sender, EventArgs e)

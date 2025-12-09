@@ -3,16 +3,35 @@
   "WorkspaceRootPath": "C:\\Users\\supra\\Documents\\Git\\AP2_INTERMARCHE_T\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|c:\\users\\supra\\documents\\git\\ap2_intermarche_t\\ap2_intermarche\\attrib_com_r.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|solutionrelative:ap2_intermarche\\attrib_com_r.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|c:\\users\\supra\\documents\\git\\ap2_intermarche_t\\ap2_intermarche\\notification_c.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|solutionrelative:ap2_intermarche\\notification_c.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|c:\\users\\supra\\documents\\git\\ap2_intermarche_t\\ap2_intermarche\\attrib_com_r.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|solutionrelative:ap2_intermarche\\attrib_com_r.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|c:\\users\\supra\\documents\\git\\ap2_intermarche_t\\ap2_intermarche\\notification_c.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|solutionrelative:ap2_intermarche\\notification_c.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|C:\\Users\\supra\\Documents\\Git\\AP2_INTERMARCHE_T\\ap2_intermarche\\log_produit_c.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|solutionrelative:ap2_intermarche\\log_produit_c.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|c:\\users\\supra\\documents\\git\\ap2_intermarche_t\\ap2_intermarche\\log_produit_c.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|solutionrelative:ap2_intermarche\\log_produit_c.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|c:\\users\\supra\\documents\\git\\ap2_intermarche_t\\ap2_intermarche\\commande_p.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|solutionrelative:ap2_intermarche\\commande_p.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|C:\\Users\\supra\\Documents\\Git\\AP2_INTERMARCHE_T\\ap2_intermarche\\attrib_com_r.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|solutionrelative:ap2_intermarche\\attrib_com_r.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|c:\\users\\supra\\documents\\git\\ap2_intermarche_t\\ap2_intermarche\\attrib_com_r.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|solutionrelative:ap2_intermarche\\attrib_com_r.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|c:\\users\\supra\\documents\\git\\ap2_intermarche_t\\ap2_intermarche\\home_r.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,18 +40,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|C:\\Users\\supra\\Documents\\Git\\AP2_INTERMARCHE_T\\ap2_intermarche\\home_r.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|solutionrelative:ap2_intermarche\\home_r.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|c:\\users\\supra\\documents\\git\\ap2_intermarche_t\\ap2_intermarche\\notification_c.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|solutionrelative:ap2_intermarche\\notification_c.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|C:\\Users\\supra\\Documents\\Git\\AP2_INTERMARCHE_T\\ap2_intermarche\\notification_c.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|solutionrelative:ap2_intermarche\\notification_c.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|c:\\users\\supra\\documents\\git\\ap2_intermarche_t\\ap2_intermarche\\log_produit_c.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|solutionrelative:ap2_intermarche\\log_produit_c.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|c:\\users\\supra\\documents\\git\\ap2_intermarche_t\\ap2_intermarche\\home_p.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -62,7 +69,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -70,32 +77,104 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "attrib_com_R.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\supra\\Documents\\Git\\AP2_INTERMARCHE_T\\AP2_INTERMARCHE\\attrib_com_R.cs",
+              "RelativeDocumentMoniker": "AP2_INTERMARCHE\\attrib_com_R.cs",
+              "ToolTip": "C:\\Users\\supra\\Documents\\Git\\AP2_INTERMARCHE_T\\AP2_INTERMARCHE\\attrib_com_R.cs [Design]",
+              "RelativeToolTip": "AP2_INTERMARCHE\\attrib_com_R.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T18:53:47.076Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Log_produit_C.cs",
+              "DocumentMoniker": "C:\\Users\\supra\\Documents\\Git\\AP2_INTERMARCHE_T\\AP2_INTERMARCHE\\Log_produit_C.cs",
+              "RelativeDocumentMoniker": "AP2_INTERMARCHE\\Log_produit_C.cs",
+              "ToolTip": "C:\\Users\\supra\\Documents\\Git\\AP2_INTERMARCHE_T\\AP2_INTERMARCHE\\Log_produit_C.cs",
+              "RelativeToolTip": "AP2_INTERMARCHE\\Log_produit_C.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABwAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T18:36:26.339Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Log_produit_C.cs [Conception]",
+              "DocumentMoniker": "C:\\Users\\supra\\Documents\\Git\\AP2_INTERMARCHE_T\\AP2_INTERMARCHE\\Log_produit_C.cs",
+              "RelativeDocumentMoniker": "AP2_INTERMARCHE\\Log_produit_C.cs",
+              "ToolTip": "C:\\Users\\supra\\Documents\\Git\\AP2_INTERMARCHE_T\\AP2_INTERMARCHE\\Log_produit_C.cs [Conception]",
+              "RelativeToolTip": "AP2_INTERMARCHE\\Log_produit_C.cs [Conception]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T18:34:24.305Z",
+              "EditorCaption": " [Conception]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Notification_C.cs [Conception]",
+              "DocumentMoniker": "C:\\Users\\supra\\Documents\\Git\\AP2_INTERMARCHE_T\\AP2_INTERMARCHE\\Notification_C.cs",
+              "RelativeDocumentMoniker": "AP2_INTERMARCHE\\Notification_C.cs",
+              "ToolTip": "C:\\Users\\supra\\Documents\\Git\\AP2_INTERMARCHE_T\\AP2_INTERMARCHE\\Notification_C.cs [Conception]",
+              "RelativeToolTip": "AP2_INTERMARCHE\\Notification_C.cs [Conception]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T17:57:56.876Z",
+              "EditorCaption": " [Conception]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Notification_C.cs",
+              "DocumentMoniker": "C:\\Users\\supra\\Documents\\Git\\AP2_INTERMARCHE_T\\AP2_INTERMARCHE\\Notification_C.cs",
+              "RelativeDocumentMoniker": "AP2_INTERMARCHE\\Notification_C.cs",
+              "ToolTip": "C:\\Users\\supra\\Documents\\Git\\AP2_INTERMARCHE_T\\AP2_INTERMARCHE\\Notification_C.cs",
+              "RelativeToolTip": "AP2_INTERMARCHE\\Notification_C.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACEAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T14:51:44.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AgIAAM8VAAAAAAAAAAAwwN4VAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-12-09T07:42:06.662Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Commande_P.cs [Conception]",
+              "DocumentMoniker": "C:\\Users\\supra\\Documents\\Git\\AP2_INTERMARCHE_T\\AP2_INTERMARCHE\\Commande_P.cs",
+              "RelativeDocumentMoniker": "AP2_INTERMARCHE\\Commande_P.cs",
+              "ToolTip": "C:\\Users\\supra\\Documents\\Git\\AP2_INTERMARCHE_T\\AP2_INTERMARCHE\\Commande_P.cs [Conception]",
+              "RelativeToolTip": "AP2_INTERMARCHE\\Commande_P.cs [Conception]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T08:40:52.492Z",
+              "EditorCaption": " [Conception]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "attrib_com_R.cs",
               "DocumentMoniker": "C:\\Users\\supra\\Documents\\Git\\AP2_INTERMARCHE_T\\AP2_INTERMARCHE\\attrib_com_R.cs",
               "RelativeDocumentMoniker": "AP2_INTERMARCHE\\attrib_com_R.cs",
               "ToolTip": "C:\\Users\\supra\\Documents\\Git\\AP2_INTERMARCHE_T\\AP2_INTERMARCHE\\attrib_com_R.cs",
               "RelativeToolTip": "AP2_INTERMARCHE\\attrib_com_R.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAtwDQAAABAAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAtwDQAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T18:54:11.77Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-08T18:54:11.77Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "attrib_com_R.cs [Conception]",
-              "DocumentMoniker": "C:\\Users\\supra\\Documents\\Git\\AP2_INTERMARCHE_T\\AP2_INTERMARCHE\\attrib_com_R.cs",
-              "RelativeDocumentMoniker": "AP2_INTERMARCHE\\attrib_com_R.cs",
-              "ToolTip": "C:\\Users\\supra\\Documents\\Git\\AP2_INTERMARCHE_T\\AP2_INTERMARCHE\\attrib_com_R.cs [Conception]",
-              "RelativeToolTip": "AP2_INTERMARCHE\\attrib_com_R.cs [Conception]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T18:53:47.076Z",
-              "EditorCaption": " [Conception]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "home_R.cs",
               "DocumentMoniker": "C:\\Users\\supra\\Documents\\Git\\AP2_INTERMARCHE_T\\AP2_INTERMARCHE\\home_R.cs",
               "RelativeDocumentMoniker": "AP2_INTERMARCHE\\home_R.cs",
@@ -108,57 +187,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Log_produit_C.cs",
-              "DocumentMoniker": "C:\\Users\\supra\\Documents\\Git\\AP2_INTERMARCHE_T\\AP2_INTERMARCHE\\Log_produit_C.cs",
-              "RelativeDocumentMoniker": "AP2_INTERMARCHE\\Log_produit_C.cs",
-              "ToolTip": "C:\\Users\\supra\\Documents\\Git\\AP2_INTERMARCHE_T\\AP2_INTERMARCHE\\Log_produit_C.cs",
-              "RelativeToolTip": "AP2_INTERMARCHE\\Log_produit_C.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAIwCgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T18:36:26.339Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Log_produit_C.cs [Conception]",
-              "DocumentMoniker": "C:\\Users\\supra\\Documents\\Git\\AP2_INTERMARCHE_T\\AP2_INTERMARCHE\\Log_produit_C.cs",
-              "RelativeDocumentMoniker": "AP2_INTERMARCHE\\Log_produit_C.cs",
-              "ToolTip": "C:\\Users\\supra\\Documents\\Git\\AP2_INTERMARCHE_T\\AP2_INTERMARCHE\\Log_produit_C.cs [Conception]",
-              "RelativeToolTip": "AP2_INTERMARCHE\\Log_produit_C.cs [Conception]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T18:34:24.305Z",
-              "EditorCaption": " [Conception]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Notification_C.cs [Conception]",
-              "DocumentMoniker": "C:\\Users\\supra\\Documents\\Git\\AP2_INTERMARCHE_T\\AP2_INTERMARCHE\\Notification_C.cs",
-              "RelativeDocumentMoniker": "AP2_INTERMARCHE\\Notification_C.cs",
-              "ToolTip": "C:\\Users\\supra\\Documents\\Git\\AP2_INTERMARCHE_T\\AP2_INTERMARCHE\\Notification_C.cs [Conception]",
-              "RelativeToolTip": "AP2_INTERMARCHE\\Notification_C.cs [Conception]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-07T17:57:56.876Z",
-              "EditorCaption": " [Conception]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Notification_C.cs",
-              "DocumentMoniker": "C:\\Users\\supra\\Documents\\Git\\AP2_INTERMARCHE_T\\AP2_INTERMARCHE\\Notification_C.cs",
-              "RelativeDocumentMoniker": "AP2_INTERMARCHE\\Notification_C.cs",
-              "ToolTip": "C:\\Users\\supra\\Documents\\Git\\AP2_INTERMARCHE_T\\AP2_INTERMARCHE\\Notification_C.cs",
-              "RelativeToolTip": "AP2_INTERMARCHE\\Notification_C.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAYwCUAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-02T14:51:44.711Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "home_P.cs",
               "DocumentMoniker": "C:\\Users\\supra\\Documents\\Git\\AP2_INTERMARCHE_T\\AP2_INTERMARCHE\\home_P.cs",
               "RelativeDocumentMoniker": "AP2_INTERMARCHE\\home_P.cs",
@@ -171,31 +200,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "home_R.cs [Conception]",
+              "DocumentIndex": 9,
+              "Title": "home_R.cs [Design]",
               "DocumentMoniker": "C:\\Users\\supra\\Documents\\Git\\AP2_INTERMARCHE_T\\AP2_INTERMARCHE\\home_R.cs",
               "RelativeDocumentMoniker": "AP2_INTERMARCHE\\home_R.cs",
-              "ToolTip": "C:\\Users\\supra\\Documents\\Git\\AP2_INTERMARCHE_T\\AP2_INTERMARCHE\\home_R.cs [Conception]",
-              "RelativeToolTip": "AP2_INTERMARCHE\\home_R.cs [Conception]",
+              "ToolTip": "C:\\Users\\supra\\Documents\\Git\\AP2_INTERMARCHE_T\\AP2_INTERMARCHE\\home_R.cs [Design]",
+              "RelativeToolTip": "AP2_INTERMARCHE\\home_R.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-02T13:57:14.359Z",
-              "EditorCaption": " [Conception]"
+              "WhenOpened": "2025-12-02T13:57:14.359Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "home_P.cs [Conception]",
+              "DocumentIndex": 11,
+              "Title": "home_P.cs [Design]",
               "DocumentMoniker": "C:\\Users\\supra\\Documents\\Git\\AP2_INTERMARCHE_T\\AP2_INTERMARCHE\\home_P.cs",
               "RelativeDocumentMoniker": "AP2_INTERMARCHE\\home_P.cs",
-              "ToolTip": "C:\\Users\\supra\\Documents\\Git\\AP2_INTERMARCHE_T\\AP2_INTERMARCHE\\home_P.cs [Conception]",
-              "RelativeToolTip": "AP2_INTERMARCHE\\home_P.cs [Conception]",
+              "ToolTip": "C:\\Users\\supra\\Documents\\Git\\AP2_INTERMARCHE_T\\AP2_INTERMARCHE\\home_P.cs [Design]",
+              "RelativeToolTip": "AP2_INTERMARCHE\\home_P.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-02T14:16:26.323Z",
-              "EditorCaption": " [Conception]"
+              "WhenOpened": "2025-12-02T14:16:26.323Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "Global.cs",
               "DocumentMoniker": "C:\\Users\\supra\\Documents\\Git\\AP2_INTERMARCHE_T\\AP2_INTERMARCHE\\Global.cs",
               "RelativeDocumentMoniker": "AP2_INTERMARCHE\\Global.cs",
@@ -203,12 +230,11 @@
               "RelativeToolTip": "AP2_INTERMARCHE\\Global.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-02T13:57:14.692Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-02T13:57:14.692Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "Accueil.cs",
               "DocumentMoniker": "C:\\Users\\supra\\Documents\\Git\\AP2_INTERMARCHE_T\\AP2_INTERMARCHE\\Accueil.cs",
               "RelativeDocumentMoniker": "AP2_INTERMARCHE\\Accueil.cs",
@@ -221,12 +247,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Accueil.cs [Conception]",
+              "DocumentIndex": 14,
+              "Title": "Accueil.cs [Design]",
               "DocumentMoniker": "C:\\Users\\supra\\Documents\\Git\\AP2_INTERMARCHE_T\\AP2_INTERMARCHE\\Accueil.cs",
               "RelativeDocumentMoniker": "AP2_INTERMARCHE\\Accueil.cs",
-              "ToolTip": "C:\\Users\\supra\\Documents\\Git\\AP2_INTERMARCHE_T\\AP2_INTERMARCHE\\Accueil.cs [Conception]",
-              "RelativeToolTip": "AP2_INTERMARCHE\\Accueil.cs [Conception]",
+              "ToolTip": "C:\\Users\\supra\\Documents\\Git\\AP2_INTERMARCHE_T\\AP2_INTERMARCHE\\Accueil.cs [Design]",
+              "RelativeToolTip": "AP2_INTERMARCHE\\Accueil.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-02T13:57:14.922Z"
             }
