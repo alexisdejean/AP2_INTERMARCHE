@@ -46,7 +46,7 @@ namespace AP2_INTERMARCHE
             ListeCommande.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2, columnHeader6 });
             ListeCommande.Location = new Point(26, 26);
             ListeCommande.Name = "ListeCommande";
-            ListeCommande.Size = new Size(748, 276);
+            ListeCommande.Size = new Size(655, 276);
             ListeCommande.TabIndex = 0;
             ListeCommande.UseCompatibleStateImageBehavior = false;
             ListeCommande.View = View.Details;
@@ -67,10 +67,6 @@ namespace AP2_INTERMARCHE
             columnHeader6.Text = "Commande";
             columnHeader6.TextAlign = HorizontalAlignment.Center;
             columnHeader6.Width = 120;
-            // 
-            // columnHeader6
-            // 
-            columnHeader6.Text = "Commande";
             // 
             // ListeProduit
             // 
@@ -119,7 +115,7 @@ namespace AP2_INTERMARCHE
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1557, 771);
             Controls.Add(numericUpDown1);
             Controls.Add(changement_valider);
             Controls.Add(ListeProduit);

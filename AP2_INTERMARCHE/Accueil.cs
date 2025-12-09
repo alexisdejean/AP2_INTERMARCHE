@@ -24,7 +24,7 @@ namespace AP2_INTERMARCHE
             {
                 if(ValidationRole(id, mdp))
                 {
-                    MessageBox.Show("Connexion Réussie !", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Connexion Rï¿½ussie !", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     if (global.role == 1)
                     {
@@ -51,7 +51,7 @@ namespace AP2_INTERMARCHE
                 }
                 else
                 {
-                    MessageBox.Show("Rôle inconnu", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Rï¿½le inconnu", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
                     
@@ -74,12 +74,9 @@ namespace AP2_INTERMARCHE
 
                 object result = commande.ExecuteScalar();
                 return result != null && Convert.ToInt32(result) == 1;
-<<<<<<< HEAD
 
                 connexion.Close();
-=======
                 
->>>>>>> origin/dev
             }
         }
         private bool ValidationRole(string identifiant, string mot_de_passe)

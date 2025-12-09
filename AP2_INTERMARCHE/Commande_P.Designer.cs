@@ -38,6 +38,7 @@
             columnHeader6 = new ColumnHeader();
             textBox1 = new TextBox();
             Valider_notif = new Button();
+            button1 = new Button();
             SuspendLayout();
             // 
             // tb_produit
@@ -45,7 +46,7 @@
             tb_produit.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3, columnHeader4 });
             tb_produit.Location = new Point(295, 12);
             tb_produit.Name = "tb_produit";
-            tb_produit.Size = new Size(474, 393);
+            tb_produit.Size = new Size(474, 334);
             tb_produit.TabIndex = 0;
             tb_produit.UseCompatibleStateImageBehavior = false;
             tb_produit.View = View.Details;
@@ -109,11 +110,21 @@
             Valider_notif.Text = "Valider";
             Valider_notif.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            button1.Location = new Point(465, 362);
+            button1.Name = "button1";
+            button1.Size = new Size(121, 59);
+            button1.TabIndex = 4;
+            button1.Text = "Valider";
+            button1.UseVisualStyleBackColor = true;
+            // 
             // Commande_P
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button1);
             Controls.Add(Valider_notif);
             Controls.Add(textBox1);
             Controls.Add(tb_Commande);
@@ -136,5 +147,6 @@
         private ColumnHeader columnHeader6;
         private TextBox textBox1;
         private Button Valider_notif;
+        private Button button1;
     }
 }
