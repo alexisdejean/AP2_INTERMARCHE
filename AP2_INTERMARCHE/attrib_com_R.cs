@@ -22,19 +22,22 @@ namespace AP2_INTERMARCHE
         {
             string connexion = global.connection;
             using SqlConnection link = new SqlConnection(connexion);
-            using SqlCommand commande = new SqlCommand("Afficherlesnotifs", link);
+            using SqlCommand commande = new SqlCommand("AfficherLesCommande", link);
             {
                 commande.CommandType = CommandType.StoredProcedure;
                 link.Open();
                 SqlDataReader datereader = commande.ExecuteReader();
                 int id = 0;
                 string libelle = "";
+                string statut = "";
                 while (datereader.Read())
                 {
                     id = datereader.GetInt32(0);
                     libelle = datereader.GetString(1);
+                    statut = datereader.GetString(2);
                     ListViewItem item = new ListViewItem(id.ToString());
                     item.SubItems.Add(libelle);
+                    item.SubItems.Add(statut);
                     List_Commande.Items.Add(item);
                 }
 

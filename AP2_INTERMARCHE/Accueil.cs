@@ -74,8 +74,12 @@ namespace AP2_INTERMARCHE
 
                 object result = commande.ExecuteScalar();
                 return result != null && Convert.ToInt32(result) == 1;
+<<<<<<< HEAD
 
                 connexion.Close();
+=======
+                
+>>>>>>> origin/dev
             }
         }
         private bool ValidationRole(string identifiant, string mot_de_passe)
