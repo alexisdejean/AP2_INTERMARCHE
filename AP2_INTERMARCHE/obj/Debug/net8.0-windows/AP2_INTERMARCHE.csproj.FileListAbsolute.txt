@@ -19,7 +19,6 @@ C:\Users\supra\Documents\Git\AP2_INTERMARCHE_T\AP2_INTERMARCHE\obj\Debug\net8.0-
 C:\Users\supra\Documents\Git\AP2_INTERMARCHE_T\AP2_INTERMARCHE\obj\Debug\net8.0-windows\refint\AP2_INTERMARCHE.dll
 C:\Users\supra\Documents\Git\AP2_INTERMARCHE_T\AP2_INTERMARCHE\obj\Debug\net8.0-windows\AP2_INTERMARCHE.pdb
 =======
-<<<<<<< HEAD
 C:\Users\arthu\Documents\workspace\AP2_INTERMARCHE\AP2_INTERMARCHE\AP2_INTERMARCHE\bin\Debug\net8.0-windows\AP2_INTERMARCHE.exe
 C:\Users\arthu\Documents\workspace\AP2_INTERMARCHE\AP2_INTERMARCHE\AP2_INTERMARCHE\bin\Debug\net8.0-windows\AP2_INTERMARCHE.deps.json
 C:\Users\arthu\Documents\workspace\AP2_INTERMARCHE\AP2_INTERMARCHE\AP2_INTERMARCHE\bin\Debug\net8.0-windows\AP2_INTERMARCHE.runtimeconfig.json
@@ -93,7 +92,6 @@ C:\Users\arthu\Documents\workspace\AP2_INTERMARCHE\AP2_INTERMARCHE\AP2_INTERMARC
 C:\Users\arthu\Documents\workspace\AP2_INTERMARCHE\AP2_INTERMARCHE\AP2_INTERMARCHE\obj\Debug\net8.0-windows\AP2_INTERMARCHE.pdb
 C:\Users\arthu\Documents\workspace\AP2_INTERMARCHE\AP2_INTERMARCHE\AP2_INTERMARCHE\obj\Debug\net8.0-windows\AP2_INTERMARCHE.genruntimeconfig.cache
 C:\Users\arthu\Documents\workspace\AP2_INTERMARCHE\AP2_INTERMARCHE\AP2_INTERMARCHE\obj\Debug\net8.0-windows\ref\AP2_INTERMARCHE.dll
-=======
 >>>>>>> origin/dev
 C:\Users\supra\Documents\Git\AP2_INTERMARCHE_T\AP2_INTERMARCHE\bin\Debug\net8.0-windows\AP2_INTERMARCHE.exe
 C:\Users\supra\Documents\Git\AP2_INTERMARCHE_T\AP2_INTERMARCHE\bin\Debug\net8.0-windows\AP2_INTERMARCHE.deps.json
@@ -150,4 +148,4 @@ C:\Users\supra\Documents\Git\AP2_INTERMARCHE_T\AP2_INTERMARCHE\bin\Debug\net8.0-
 C:\Users\supra\Documents\Git\AP2_INTERMARCHE_T\AP2_INTERMARCHE\obj\Debug\net8.0-windows\AP2_INTE.03D765B9.Up2Date
 C:\Users\supra\Documents\Git\AP2_INTERMARCHE_T\AP2_INTERMARCHE\obj\Debug\net8.0-windows\AP2_INTERMARCHE.genruntimeconfig.cache
 C:\Users\supra\Documents\Git\AP2_INTERMARCHE_T\AP2_INTERMARCHE\obj\Debug\net8.0-windows\ref\AP2_INTERMARCHE.dll
->>>>>>> origin/dev
+C:\Users\arthu\Documents\workspace\AP2_INTERMARCHE\AP2_INTERMARCHE\AP2_INTERMARCHE\obj\Debug\net8.0-windows\AP2_INTERMARCHE.GestionUtilisateur.resources

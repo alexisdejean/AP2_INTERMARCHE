@@ -10,6 +10,9 @@
     <Compile Update="Commande_P.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="GestionUtilisateur.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="home_C.cs">
       <SubType>Form</SubType>
     </Compile>

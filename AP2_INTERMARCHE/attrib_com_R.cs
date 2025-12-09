@@ -19,7 +19,7 @@ namespace AP2_INTERMARCHE
             InitializeComponent();
         }
 
-        private void attrib_com_R_Load(object sender, EventArgs e) // PROCÉDURE NON CONFIGURÉE
+        private void attrib_com_R_Load(object sender, EventArgs e)
         {
             string connexion = global.connection;
             using SqlConnection link = new SqlConnection(connexion);
