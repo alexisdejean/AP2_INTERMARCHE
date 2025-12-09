@@ -19,7 +19,7 @@ namespace AP2_INTERMARCHE
         {
             string id = txt_login.Text.Trim();
             string mdp = txt_mdp.Text;
-            global.connection = @"Server=LAPTOP-C8LQR30P;Database=bdd_intermarche;Trusted_Connection=True;TrustServerCertificate=True;";
+            global.connection = @"Server=MSI;Database=bdd_intermarche;Trusted_Connection=True;TrustServerCertificate=True;";
             if (ValidationIdentitee(id, mdp))
             {
                 if(ValidationRole(id, mdp))
@@ -74,6 +74,8 @@ namespace AP2_INTERMARCHE
 
                 object result = commande.ExecuteScalar();
                 return result != null && Convert.ToInt32(result) == 1;
+
+                connexion.Close();
             }
         }
         private bool ValidationRole(string identifiant, string mot_de_passe)
@@ -113,6 +115,7 @@ namespace AP2_INTERMARCHE
                         }
                     }
                 }
+                connexion.Close();
             }
         }
 

@@ -35,6 +35,7 @@ namespace AP2_INTERMARCHE
                 int quantitee = 0;
                 while (datereader.Read())
                 {
+                    MessageBox.Show(datereader.GetString(4), "Information");
                     id = datereader.GetInt32(0);
                     libelle = datereader.GetString(1);
                     codePalette = datereader.GetInt32(2);
@@ -43,9 +44,13 @@ namespace AP2_INTERMARCHE
                     quantitee = datereader.GetInt32(5);
                     ListViewItem item = new ListViewItem(id.ToString());
                     item.SubItems.Add(libelle);
+                    item.SubItems.Add(codePalette.ToString());
+                    item.SubItems.Add(codePaletteStockage.ToString());
+                    item.SubItems.Add(libelle_produit);
+                    item.SubItems.Add(quantitee.ToString());
                     List_Logs.Items.Add(item);
                 }
-
+                link.Close();
 
             }
         }
