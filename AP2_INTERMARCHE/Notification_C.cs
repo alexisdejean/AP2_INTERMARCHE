@@ -37,6 +37,7 @@ namespace AP2_INTERMARCHE
                     item.SubItems.Add(libelle);
                     ListeCommande.Items.Add(item);
                 }
+                link.Close();
 
 
             }
