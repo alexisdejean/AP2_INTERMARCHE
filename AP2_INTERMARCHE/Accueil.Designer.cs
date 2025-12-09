@@ -44,7 +44,8 @@
             label1.Name = "label1";
             label1.Size = new Size(286, 52);
             label1.TabIndex = 0;
-            label1.Text = "label1";
+            label1.Text = "Bienvenue ";
+            label1.TextAlign = ContentAlignment.MiddleCenter;
             label1.Click += label1_Click;
             // 
             // pictureBox1
@@ -78,7 +79,7 @@
             btn_login.Name = "btn_login";
             btn_login.Size = new Size(144, 55);
             btn_login.TabIndex = 4;
-            btn_login.Text = "button1";
+            btn_login.Text = "Valider";
             btn_login.UseVisualStyleBackColor = true;
             btn_login.Click += btn_login_Click;
             // 
@@ -87,18 +88,18 @@
             label2.AutoSize = true;
             label2.Location = new Point(493, 319);
             label2.Name = "label2";
-            label2.Size = new Size(50, 20);
+            label2.Size = new Size(46, 20);
             label2.TabIndex = 5;
-            label2.Text = "label2";
+            label2.Text = "Login";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(493, 373);
+            label3.Location = new Point(469, 373);
             label3.Name = "label3";
-            label3.Size = new Size(50, 20);
+            label3.Size = new Size(98, 20);
             label3.TabIndex = 6;
-            label3.Text = "label3";
+            label3.Text = "Mot de passe";
             // 
             // Accueil
             // 
