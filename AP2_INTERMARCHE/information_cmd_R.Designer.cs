@@ -38,7 +38,7 @@
             // listView1
             // 
             listView1.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3, columnHeader4 });
-            listView1.Location = new Point(12, 31);
+            listView1.Location = new Point(75, 65);
             listView1.Name = "listView1";
             listView1.Size = new Size(391, 373);
             listView1.TabIndex = 0;
@@ -71,7 +71,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(407, 452);
+            ClientSize = new Size(548, 531);
             Controls.Add(listView1);
             Name = "information_cmd_R";
             Text = "information_cmd_R";
