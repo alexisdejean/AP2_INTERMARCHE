@@ -32,5 +32,13 @@ namespace AP2_INTERMARCHE
             attribution.WindowState = FormWindowState.Maximized;
             attribution.Show();
         }
+
+        private void supprimerUtilisateurToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            GestionUtilisateur gestion = new GestionUtilisateur();
+            gestion.MdiParent = this;
+            gestion.WindowState = FormWindowState.Maximized;
+            gestion.Show();
+        }
     }
 }

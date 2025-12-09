@@ -19,12 +19,12 @@ namespace AP2_INTERMARCHE
         {
             string id = txt_login.Text.Trim();
             string mdp = txt_mdp.Text;
-            global.connection = @"Server=MSI;Database=bdd_intermarche;Trusted_Connection=True;TrustServerCertificate=True;";
+            global.connection = @"Server=LAPTOP-C8LQR30P;Database=bdd_intermarche;Trusted_Connection=True;TrustServerCertificate=True;";
             if (ValidationIdentitee(id, mdp))
             {
                 if(ValidationRole(id, mdp))
                 {
-                    MessageBox.Show("Connexion R�ussie !", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Connexion Réussie !", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     if (global.role == 1)
                     {

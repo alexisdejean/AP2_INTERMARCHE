@@ -41,12 +41,34 @@ namespace AP2_INTERMARCHE
                     ListViewItem item = new ListViewItem(id.ToString());
                     item.SubItems.Add(libelle);
                     item.SubItems.Add(nb.ToString());
-                    item.SubItems.Add( statut);
+                    item.SubItems.Add(statut);
                     tb_commande.Items.Add(item);
                 }
                 link.Close();
-
-
+            }
+            
+            using SqlCommand cmd = new SqlCommand("afficherlescommandeterminer", link);
+            {
+                cmd.CommandType = CommandType.StoredProcedure;
+                link.Open();
+                SqlDataReader datereader = cmd.ExecuteReader();
+                int id = 0;
+                string libelle = "";
+                string statut = "";
+                int nb;
+                while (datereader.Read())
+                {
+                    id = datereader.GetInt32(0);
+                    libelle = datereader.GetString(1);
+                    statut = datereader.GetString(2);
+                    nb = datereader.GetInt32(3);
+                    ListViewItem item = new ListViewItem(id.ToString());
+                    item.SubItems.Add(libelle);
+                    item.SubItems.Add(nb.ToString());
+                    item.SubItems.Add(statut);
+                    tb_terminer.Items.Add(item);
+                }
+                link.Close();
             }
         }
     }

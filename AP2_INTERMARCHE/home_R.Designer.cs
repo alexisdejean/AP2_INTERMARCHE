@@ -31,16 +31,18 @@
             menuStrip1 = new MenuStrip();
             btn_information = new ToolStripMenuItem();
             btn_atrib = new ToolStripMenuItem();
+            utilisateurToolStripMenuItem = new ToolStripMenuItem();
+            supprimerUtilisateurToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
             // 
             menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { btn_information, btn_atrib });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { btn_information, btn_atrib, utilisateurToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(1206, 28);
+            menuStrip1.Size = new Size(1709, 28);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -58,11 +60,25 @@
             btn_atrib.Text = "Atribution commande";
             btn_atrib.Click += btn_atrib_Click;
             // 
+            // utilisateurToolStripMenuItem
+            // 
+            utilisateurToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { supprimerUtilisateurToolStripMenuItem });
+            utilisateurToolStripMenuItem.Name = "utilisateurToolStripMenuItem";
+            utilisateurToolStripMenuItem.Size = new Size(90, 24);
+            utilisateurToolStripMenuItem.Text = "Utilisateur";
+            // 
+            // supprimerUtilisateurToolStripMenuItem
+            // 
+            supprimerUtilisateurToolStripMenuItem.Name = "supprimerUtilisateurToolStripMenuItem";
+            supprimerUtilisateurToolStripMenuItem.Size = new Size(232, 26);
+            supprimerUtilisateurToolStripMenuItem.Text = "Supprimer Utilisateur";
+            supprimerUtilisateurToolStripMenuItem.Click += supprimerUtilisateurToolStripMenuItem_Click;
+            // 
             // home_R
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1206, 516);
+            ClientSize = new Size(1709, 783);
             Controls.Add(menuStrip1);
             IsMdiContainer = true;
             MainMenuStrip = menuStrip1;
@@ -79,5 +95,7 @@
         private MenuStrip menuStrip1;
         private ToolStripMenuItem btn_information;
         private ToolStripMenuItem btn_atrib;
+        private ToolStripMenuItem utilisateurToolStripMenuItem;
+        private ToolStripMenuItem supprimerUtilisateurToolStripMenuItem;
     }
 }
