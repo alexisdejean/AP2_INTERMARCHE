@@ -31,13 +31,14 @@
             ListeCommande = new ListView();
             columnHeader1 = new ColumnHeader();
             columnHeader2 = new ColumnHeader();
+            columnHeader6 = new ColumnHeader();
             ListeProduit = new ListView();
             columnHeader3 = new ColumnHeader();
             columnHeader4 = new ColumnHeader();
             columnHeader5 = new ColumnHeader();
             changement_valider = new Button();
-            cb_produits = new ComboBox();
-            columnHeader6 = new ColumnHeader();
+            qte_produit = new NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)qte_produit).BeginInit();
             SuspendLayout();
             // 
             // ListeCommande
@@ -45,7 +46,7 @@
             ListeCommande.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2, columnHeader6 });
             ListeCommande.Location = new Point(26, 26);
             ListeCommande.Name = "ListeCommande";
-            ListeCommande.Size = new Size(291, 276);
+            ListeCommande.Size = new Size(748, 276);
             ListeCommande.TabIndex = 0;
             ListeCommande.UseCompatibleStateImageBehavior = false;
             ListeCommande.View = View.Details;
@@ -59,12 +60,18 @@
             // 
             columnHeader2.Text = "Libelle";
             columnHeader2.TextAlign = HorizontalAlignment.Center;
-            columnHeader2.Width = 150;
+            columnHeader2.Width = 400;
+            // 
+            // columnHeader6
+            // 
+            columnHeader6.Text = "Commande";
+            columnHeader6.TextAlign = HorizontalAlignment.Center;
+            columnHeader6.Width = 120;
             // 
             // ListeProduit
             // 
             ListeProduit.Columns.AddRange(new ColumnHeader[] { columnHeader3, columnHeader4, columnHeader5 });
-            ListeProduit.Location = new Point(334, 26);
+            ListeProduit.Location = new Point(844, 26);
             ListeProduit.Name = "ListeProduit";
             ListeProduit.Size = new Size(442, 276);
             ListeProduit.TabIndex = 1;
@@ -79,13 +86,13 @@
             // 
             columnHeader4.Text = "Nom";
             columnHeader4.TextAlign = HorizontalAlignment.Center;
-            columnHeader4.Width = 120;
+            columnHeader4.Width = 200;
             // 
             // columnHeader5
             // 
             columnHeader5.Text = "Position";
             columnHeader5.TextAlign = HorizontalAlignment.Center;
-            columnHeader5.Width = 80;
+            columnHeader5.Width = 120;
             // 
             // changement_valider
             // 
@@ -97,30 +104,27 @@
             changement_valider.UseVisualStyleBackColor = true;
             changement_valider.Click += changement_valider_Click;
             // 
-            // cb_produits
+            // qte_produit
             // 
-            cb_produits.FormattingEnabled = true;
-            cb_produits.Location = new Point(568, 336);
-            cb_produits.Name = "cb_produits";
-            cb_produits.Size = new Size(151, 28);
-            cb_produits.TabIndex = 4;
-            // 
-            // columnHeader6
-            // 
-            columnHeader6.Text = "Commande";
+            qte_produit.Location = new Point(574, 345);
+            qte_produit.Maximum = new decimal(new int[] { 99999, 0, 0, 0 });
+            qte_produit.Name = "qte_produit";
+            qte_produit.Size = new Size(150, 27);
+            qte_produit.TabIndex = 4;
             // 
             // Notification_C
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(cb_produits);
+            ClientSize = new Size(1399, 487);
+            Controls.Add(qte_produit);
             Controls.Add(changement_valider);
             Controls.Add(ListeProduit);
             Controls.Add(ListeCommande);
             Name = "Notification_C";
             Text = "Notification_C";
             Load += Notification_C_Load;
+            ((System.ComponentModel.ISupportInitialize)qte_produit).EndInit();
             ResumeLayout(false);
         }
 
@@ -134,7 +138,7 @@
         private ColumnHeader columnHeader4;
         private ColumnHeader columnHeader5;
         private Button changement_valider;
-        private ComboBox cb_produits;
         private ColumnHeader columnHeader6;
+        private NumericUpDown qte_produit;
     }
 }
