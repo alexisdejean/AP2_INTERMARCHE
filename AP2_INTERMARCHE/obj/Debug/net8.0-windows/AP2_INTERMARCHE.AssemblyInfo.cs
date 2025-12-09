@@ -14,11 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AP2_INTERMARCHE")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< Updated upstream
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a3cdca757b7e464e9fe36958ada316832f2c939c")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d30c3b9928d1d92399df420e27d8f65f91ef52f5")]
->>>>>>> Stashed changes
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+06be79a8313952faeb35e50e74f67908bd5174c6")]
 [assembly: System.Reflection.AssemblyProductAttribute("AP2_INTERMARCHE")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AP2_INTERMARCHE")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
