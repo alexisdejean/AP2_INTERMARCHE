@@ -1,4 +1,4 @@
-﻿namespace AP2_INTERMARCHE
+namespace AP2_INTERMARCHE
 {
     partial class Notification_C
     {
@@ -46,7 +46,7 @@
             ListeCommande.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2, columnHeader6 });
             ListeCommande.Location = new Point(26, 26);
             ListeCommande.Name = "ListeCommande";
-            ListeCommande.Size = new Size(291, 276);
+            ListeCommande.Size = new Size(748, 276);
             ListeCommande.TabIndex = 0;
             ListeCommande.UseCompatibleStateImageBehavior = false;
             ListeCommande.View = View.Details;
@@ -60,7 +60,13 @@
             // 
             columnHeader2.Text = "Libelle";
             columnHeader2.TextAlign = HorizontalAlignment.Center;
-            columnHeader2.Width = 150;
+            columnHeader2.Width = 400;
+            // 
+            // columnHeader6
+            // 
+            columnHeader6.Text = "Commande";
+            columnHeader6.TextAlign = HorizontalAlignment.Center;
+            columnHeader6.Width = 120;
             // 
             // columnHeader6
             // 
@@ -69,7 +75,7 @@
             // ListeProduit
             // 
             ListeProduit.Columns.AddRange(new ColumnHeader[] { columnHeader3, columnHeader4, columnHeader5 });
-            ListeProduit.Location = new Point(334, 26);
+            ListeProduit.Location = new Point(844, 26);
             ListeProduit.Name = "ListeProduit";
             ListeProduit.Size = new Size(442, 276);
             ListeProduit.TabIndex = 1;
@@ -84,13 +90,13 @@
             // 
             columnHeader4.Text = "Nom";
             columnHeader4.TextAlign = HorizontalAlignment.Center;
-            columnHeader4.Width = 120;
+            columnHeader4.Width = 200;
             // 
             // columnHeader5
             // 
             columnHeader5.Text = "Position";
             columnHeader5.TextAlign = HorizontalAlignment.Center;
-            columnHeader5.Width = 80;
+            columnHeader5.Width = 120;
             // 
             // changement_valider
             // 
