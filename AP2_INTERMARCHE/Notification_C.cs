@@ -50,7 +50,6 @@ namespace AP2_INTERMARCHE
 
         private void changement_valider_Click(object sender, EventArgs e)
         {
-            string produit = cb_produits.Text;
             // VERIFIE LA QUANITEE EN MANQUE POUR LA COMMANDE, RENVOIE LA QUANTITEE MANQUANTE
             int result = 0; // VARIABLE DE SUBSTITUTION
             if (result > 0)

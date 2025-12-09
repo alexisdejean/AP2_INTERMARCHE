@@ -31,13 +31,14 @@
             ListeCommande = new ListView();
             columnHeader1 = new ColumnHeader();
             columnHeader2 = new ColumnHeader();
+            columnHeader6 = new ColumnHeader();
             ListeProduit = new ListView();
             columnHeader3 = new ColumnHeader();
             columnHeader4 = new ColumnHeader();
             columnHeader5 = new ColumnHeader();
             changement_valider = new Button();
-            cb_produits = new ComboBox();
-            columnHeader6 = new ColumnHeader();
+            numericUpDown1 = new NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             SuspendLayout();
             // 
             // ListeCommande
@@ -60,6 +61,10 @@
             columnHeader2.Text = "Libelle";
             columnHeader2.TextAlign = HorizontalAlignment.Center;
             columnHeader2.Width = 150;
+            // 
+            // columnHeader6
+            // 
+            columnHeader6.Text = "Commande";
             // 
             // ListeProduit
             // 
@@ -97,30 +102,26 @@
             changement_valider.UseVisualStyleBackColor = true;
             changement_valider.Click += changement_valider_Click;
             // 
-            // cb_produits
+            // numericUpDown1
             // 
-            cb_produits.FormattingEnabled = true;
-            cb_produits.Location = new Point(568, 336);
-            cb_produits.Name = "cb_produits";
-            cb_produits.Size = new Size(151, 28);
-            cb_produits.TabIndex = 4;
-            // 
-            // columnHeader6
-            // 
-            columnHeader6.Text = "Commande";
+            numericUpDown1.Location = new Point(572, 343);
+            numericUpDown1.Name = "numericUpDown1";
+            numericUpDown1.Size = new Size(150, 27);
+            numericUpDown1.TabIndex = 4;
             // 
             // Notification_C
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(cb_produits);
+            Controls.Add(numericUpDown1);
             Controls.Add(changement_valider);
             Controls.Add(ListeProduit);
             Controls.Add(ListeCommande);
             Name = "Notification_C";
             Text = "Notification_C";
             Load += Notification_C_Load;
+            ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
             ResumeLayout(false);
         }
 
@@ -134,7 +135,7 @@
         private ColumnHeader columnHeader4;
         private ColumnHeader columnHeader5;
         private Button changement_valider;
-        private ComboBox cb_produits;
         private ColumnHeader columnHeader6;
+        private NumericUpDown numericUpDown1;
     }
 }

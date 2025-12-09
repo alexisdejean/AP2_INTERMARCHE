@@ -29,10 +29,18 @@ namespace AP2_INTERMARCHE
                 SqlDataReader datereader = commande.ExecuteReader();
                 int id = 0;
                 string libelle = "";
+                int codePalette = 0;
+                int codePaletteStockage = 0;
+                string libelle_produit = "";
+                int quantitee = 0;
                 while (datereader.Read())
                 {
                     id = datereader.GetInt32(0);
                     libelle = datereader.GetString(1);
+                    codePalette = datereader.GetInt32(2);
+                    codePaletteStockage = datereader.GetInt32(3);
+                    libelle_produit = datereader.GetString(4);
+                    quantitee = datereader.GetInt32(5);
                     ListViewItem item = new ListViewItem(id.ToString());
                     item.SubItems.Add(libelle);
                     List_Logs.Items.Add(item);
