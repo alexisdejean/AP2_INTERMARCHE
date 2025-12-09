@@ -28,22 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            listView1 = new ListView();
+            tb_commande = new ListView();
             columnHeader1 = new ColumnHeader();
             columnHeader2 = new ColumnHeader();
             columnHeader3 = new ColumnHeader();
             columnHeader4 = new ColumnHeader();
             SuspendLayout();
             // 
-            // listView1
+            // tb_commande
             // 
-            listView1.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3, columnHeader4 });
-            listView1.Location = new Point(75, 65);
-            listView1.Name = "listView1";
-            listView1.Size = new Size(391, 373);
-            listView1.TabIndex = 0;
-            listView1.UseCompatibleStateImageBehavior = false;
-            listView1.View = View.Details;
+            tb_commande.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3, columnHeader4 });
+            tb_commande.Location = new Point(75, 65);
+            tb_commande.Name = "tb_commande";
+            tb_commande.Size = new Size(785, 403);
+            tb_commande.TabIndex = 0;
+            tb_commande.UseCompatibleStateImageBehavior = false;
+            tb_commande.View = View.Details;
             // 
             // columnHeader1
             // 
@@ -53,7 +53,7 @@
             // 
             columnHeader2.Text = "Libelle";
             columnHeader2.TextAlign = HorizontalAlignment.Center;
-            columnHeader2.Width = 100;
+            columnHeader2.Width = 300;
             // 
             // columnHeader3
             // 
@@ -71,16 +71,17 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(548, 531);
-            Controls.Add(listView1);
+            ClientSize = new Size(929, 556);
+            Controls.Add(tb_commande);
             Name = "information_cmd_R";
             Text = "information_cmd_R";
+            Load += information_cmd_R_Load;
             ResumeLayout(false);
         }
 
         #endregion
 
-        private ListView listView1;
+        private ListView tb_commande;
         private ColumnHeader columnHeader1;
         private ColumnHeader columnHeader2;
         private ColumnHeader columnHeader3;
