@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
 namespace AP2_INTERMARCHE
 {
@@ -128,7 +129,7 @@ namespace AP2_INTERMARCHE
                                 link.Close();
 
                             }
-                           btn_terminer.Enabled = true;
+                            btn_terminer.Enabled = true;
                         }
                         else
                         {
@@ -143,35 +144,6 @@ namespace AP2_INTERMARCHE
                     }
 
                 }
-                /*if (resultat > quantite) // SI Il y'a moins de quantitée saisie par le Cariste que de place sur la palette alors : 
-                {
-                    string connetion = global.connection; // CONNEXION !
-                    using SqlConnection linke = new SqlConnection(connetion);
-                    using SqlCommand commandes = new SqlCommand("TrouverQuantiteeProduit", link);
-                    {
-                        commandes.CommandType = CommandType.StoredProcedure;
-                        commandes.Parameters.Add("@CodePalettePrQuantitee", SqlDbType.Int).Value = codet;
-                        link.Open();
-                        object resulta = commande.ExecuteScalar();            // RECUPERATION DU RESULTAT     
-                        link.Close();
-                        int leresult = Convert.ToInt32(resulta);
-                        if ((leresult + quantite) <= resultat) // Si la quantitée de produit initiale + la quantitée saisie est inférieure à la capacité d'une palette alors :
-                        {
-                            MessageBox.Show("Quantitée bien mise à jour !", "Information");
-                        }
-                        else // Sinon
-                        {
-                            MessageBox.Show("Mais quelle erreur du joueur Français !", "Erreur");
-                        }
-
-
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("Il ne manque pas de stock concernant le produit sélectionné", "Erreur");
-                }*/
-
 
             }
         }
@@ -192,6 +164,30 @@ namespace AP2_INTERMARCHE
         private void btn_terminer_Click(object sender, EventArgs e)
         {
 
+            int code_commande = 0; // VALEUR DE TEST
+            string connexion = global.connection; // CONNEXION !
+            using SqlConnection link = new SqlConnection(connexion);
+            using SqlCommand commande = new SqlCommand("MAJSTATUTCOMMANDE", link);
+            {
+                commande.CommandType = CommandType.StoredProcedure;
+                commande.Parameters.Add("@codeCommande", SqlDbType.Int).Value = code_commande;
+                commande.Parameters.Add("@codeUser", SqlDbType.Int).Value = global.user;
+                link.Open();     
+                link.Close();
+            }
+
+
+            ////////////////////// LA PROCEDURE CI DESSOUS N'EST PAS FONCTIONNELLE PAR MANQUE DE PARAMETRES
+            string connetion = global.connection; // CONNEXION !
+            using SqlConnection linke = new SqlConnection(connetion);
+            using SqlCommand command = new SqlCommand("DELETENOTIF", linke);
+            {
+                commande.CommandType = CommandType.StoredProcedure;
+                commande.Parameters.Add("@codeCommande", SqlDbType.Int).Value = code_commande;
+                commande.Parameters.Add("@codeUser", SqlDbType.Int).Value = global.user;
+                link.Open();
+                link.Close();
+            }
         }
     }
 }
