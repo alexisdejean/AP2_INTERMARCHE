@@ -163,8 +163,12 @@ namespace AP2_INTERMARCHE
 
         private void btn_terminer_Click(object sender, EventArgs e)
         {
+            if (ListeCommande.SelectedItems.Count == 0)
+                return;
 
-            int code_commande = 0; // VALEUR DE TEST
+            int idNotif = int.Parse(ListeCommande.SelectedItems[0].SubItems[0].Text);
+            int code_commande = int.Parse(ListeCommande.SelectedItems[0].SubItems[2].Text);
+
             string connexion = global.connection; // CONNEXION !
             using SqlConnection link = new SqlConnection(connexion);
             using SqlCommand commande = new SqlCommand("MAJSTATUTCOMMANDE", link);
@@ -177,14 +181,12 @@ namespace AP2_INTERMARCHE
             }
 
 
-            ////////////////////// LA PROCEDURE CI DESSOUS N'EST PAS FONCTIONNELLE PAR MANQUE DE PARAMETRES
             string connetion = global.connection; // CONNEXION !
             using SqlConnection linke = new SqlConnection(connetion);
             using SqlCommand command = new SqlCommand("DELETENOTIF", linke);
             {
                 commande.CommandType = CommandType.StoredProcedure;
-                commande.Parameters.Add("@codeCommande", SqlDbType.Int).Value = code_commande;
-                commande.Parameters.Add("@codeUser", SqlDbType.Int).Value = global.user;
+                commande.Parameters.Add("@codeCommande", SqlDbType.Int).Value = idNotif;
                 link.Open();
                 link.Close();
             }
