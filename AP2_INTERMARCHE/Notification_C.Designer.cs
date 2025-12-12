@@ -36,6 +36,7 @@ namespace AP2_INTERMARCHE
             columnHeader3 = new ColumnHeader();
             columnHeader4 = new ColumnHeader();
             columnHeader5 = new ColumnHeader();
+            columnHeader7 = new ColumnHeader();
             changement_valider = new Button();
             num_quantite = new NumericUpDown();
             btn_terminer = new Button();
@@ -71,11 +72,11 @@ namespace AP2_INTERMARCHE
             // 
             // ListeProduit
             // 
-            ListeProduit.Columns.AddRange(new ColumnHeader[] { columnHeader3, columnHeader4, columnHeader5 });
+            ListeProduit.Columns.AddRange(new ColumnHeader[] { columnHeader3, columnHeader4, columnHeader5, columnHeader7 });
             ListeProduit.Enabled = false;
             ListeProduit.Location = new Point(844, 26);
             ListeProduit.Name = "ListeProduit";
-            ListeProduit.Size = new Size(442, 276);
+            ListeProduit.Size = new Size(498, 276);
             ListeProduit.TabIndex = 1;
             ListeProduit.UseCompatibleStateImageBehavior = false;
             ListeProduit.View = View.Details;
@@ -95,6 +96,10 @@ namespace AP2_INTERMARCHE
             columnHeader5.Text = "Position";
             columnHeader5.TextAlign = HorizontalAlignment.Center;
             columnHeader5.Width = 120;
+            // 
+            // columnHeader7
+            // 
+            columnHeader7.Text = "Code Produit";
             // 
             // changement_valider
             // 
@@ -156,5 +161,6 @@ namespace AP2_INTERMARCHE
         private ColumnHeader columnHeader6;
         private NumericUpDown num_quantite;
         private Button btn_terminer;
+        private ColumnHeader columnHeader7;
     }
 }

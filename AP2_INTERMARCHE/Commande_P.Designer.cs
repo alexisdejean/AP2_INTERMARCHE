@@ -50,6 +50,7 @@
             tb_produit.TabIndex = 0;
             tb_produit.UseCompatibleStateImageBehavior = false;
             tb_produit.View = View.Details;
+            tb_produit.SelectedIndexChanged += tb_produit_SelectedIndexChanged;
             // 
             // columnHeader1
             // 
@@ -82,6 +83,7 @@
             tb_Commande.TabIndex = 1;
             tb_Commande.UseCompatibleStateImageBehavior = false;
             tb_Commande.View = View.Details;
+            tb_Commande.SelectedIndexChanged += tb_Commande_SelectedIndexChanged;
             // 
             // columnHeader5
             // 
@@ -95,29 +97,35 @@
             // 
             // textBox1
             // 
+            textBox1.Enabled = false;
             textBox1.Location = new Point(42, 170);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(224, 156);
             textBox1.TabIndex = 2;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // Valider_notif
             // 
+            Valider_notif.Enabled = false;
             Valider_notif.Location = new Point(97, 353);
             Valider_notif.Name = "Valider_notif";
             Valider_notif.Size = new Size(94, 29);
             Valider_notif.TabIndex = 3;
             Valider_notif.Text = "Valider";
             Valider_notif.UseVisualStyleBackColor = true;
+            Valider_notif.Click += Valider_notif_Click;
             // 
             // button1
             // 
+            button1.Enabled = false;
             button1.Location = new Point(465, 362);
             button1.Name = "button1";
             button1.Size = new Size(121, 59);
             button1.TabIndex = 4;
             button1.Text = "Valider";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // Commande_P
             // 
@@ -131,6 +139,7 @@
             Controls.Add(tb_produit);
             Name = "Commande_P";
             Text = "Commande_P";
+            Load += Commande_P_Load;
             ResumeLayout(false);
             PerformLayout();
         }

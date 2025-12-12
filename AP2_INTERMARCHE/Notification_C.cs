@@ -68,15 +68,19 @@ namespace AP2_INTERMARCHE
                 string libelle = "";
                 int id_commande = 0;
                 string position = "";
+                int code_produit = 0;
                 while (datereader.Read())
                 {
                     id = datereader.GetInt32(0);
                     libelle = datereader.GetString(1);
                     id_commande = datereader.GetInt32(2);
+                    code_produit = datereader.GetInt32(3);
                     position = datereader.GetInt32(3).ToString() + " " + datereader.GetString(4);
+
                     ListViewItem item = new ListViewItem(id.ToString());
                     item.SubItems.Add(libelle);
                     item.SubItems.Add(position);
+                    item.SubItems.Add(code_produit.ToString());
                     ListeProduit.Items.Add(item);
                 }
                 link.Close();
@@ -91,10 +95,12 @@ namespace AP2_INTERMARCHE
         {
             if (ListeCommande.SelectedItems.Count == 0)
             {
+
                 return;
             }
             int codet = int.Parse(ListeProduit.SelectedItems[0].SubItems[0].Text); //L'id de la palette qui va être utilisée
             int quantite = (int)num_quantite.Value; // Quantitée saisie par le Cariste
+            int codeProduit = int.Parse(ListeProduit.SelectedItems[0].SubItems[3].Text);
             string connexion = global.connection; // CONNEXION !
             using SqlConnection link = new SqlConnection(connexion);
             using SqlCommand commande = new SqlCommand("QuantiteePalette", link);
@@ -125,6 +131,7 @@ namespace AP2_INTERMARCHE
                                 commandes.CommandType = CommandType.StoredProcedure;
                                 commandes.Parameters.Add("@NumPalette", SqlDbType.Int).Value = codet;
                                 commandes.Parameters.Add("@quantiteSaisie", SqlDbType.Int).Value = quantite;
+                                commandes.Parameters.Add("@codeProduit", SqlDbType.Int).Value = codeProduit;
                                 link.Open();
                                 link.Close();
 
@@ -163,32 +170,15 @@ namespace AP2_INTERMARCHE
 
         private void btn_terminer_Click(object sender, EventArgs e)
         {
-            if (ListeCommande.SelectedItems.Count == 0)
-                return;
-
             int idNotif = int.Parse(ListeCommande.SelectedItems[0].SubItems[0].Text);
-            int code_commande = int.Parse(ListeCommande.SelectedItems[0].SubItems[2].Text);
-
-            string connexion = global.connection; // CONNEXION !
-            using SqlConnection link = new SqlConnection(connexion);
-            using SqlCommand commande = new SqlCommand("MAJSTATUTCOMMANDE", link);
-            {
-                commande.CommandType = CommandType.StoredProcedure;
-                commande.Parameters.Add("@codeCommande", SqlDbType.Int).Value = code_commande;
-                commande.Parameters.Add("@codeUser", SqlDbType.Int).Value = global.user;
-                link.Open();     
-                link.Close();
-            }
-
-
             string connetion = global.connection; // CONNEXION !
             using SqlConnection linke = new SqlConnection(connetion);
             using SqlCommand command = new SqlCommand("DELETENOTIF", linke);
             {
-                commande.CommandType = CommandType.StoredProcedure;
-                commande.Parameters.Add("@codeCommande", SqlDbType.Int).Value = idNotif;
-                link.Open();
-                link.Close();
+                command.CommandType = CommandType.StoredProcedure;
+                command.Parameters.Add("@codeCommande", SqlDbType.Int).Value = idNotif;
+                linke.Open();
+                linke.Close();
             }
         }
     }

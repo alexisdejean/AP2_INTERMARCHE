@@ -14,6 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AP2_INTERMARCHE
-build_property.ProjectDir = C:\Users\supra\Documents\Git\AP2_INTERMARCHE_T\AP2_INTERMARCHE\
+build_property.ProjectDir = C:\Users\supra\Documents\Git\AP2\AP2_INTERMARCHE\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

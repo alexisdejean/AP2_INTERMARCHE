@@ -1603,11 +1603,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\supra\\Documents\\Git\\AP2_INTERMARCHE_T\\AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj",
+      "projectUniqueName": "C:\\Users\\supra\\Documents\\Git\\AP2\\AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj",
       "projectName": "AP2_INTERMARCHE",
-      "projectPath": "C:\\Users\\supra\\Documents\\Git\\AP2_INTERMARCHE_T\\AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj",
+      "projectPath": "C:\\Users\\supra\\Documents\\Git\\AP2\\AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj",
       "packagesPath": "C:\\Users\\supra\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\supra\\Documents\\Git\\AP2_INTERMARCHE_T\\AP2_INTERMARCHE\\obj\\",
+      "outputPath": "C:\\Users\\supra\\Documents\\Git\\AP2\\AP2_INTERMARCHE\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\supra\\AppData\\Roaming\\NuGet\\NuGet.Config",
