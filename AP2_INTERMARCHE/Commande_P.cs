@@ -99,24 +99,33 @@ namespace AP2_INTERMARCHE
             if (tb_Commande.SelectedItems.Count == 0 || tb_produit.SelectedItems.Count == 0)
                 return;
 
-            // Récupération des valeurs
             int idCommande = int.Parse(tb_Commande.SelectedItems[0].SubItems[0].Text);
-            int quantiteCommande = int.Parse(tb_Commande.SelectedItems[0].SubItems[2].Text);
 
             int idPalette = int.Parse(tb_produit.SelectedItems[0].SubItems[0].Text);
             int quantitePalette = int.Parse(tb_produit.SelectedItems[0].SubItems[2].Text);
+            string connexionString = global.connection;
 
+            using SqlConnection link = new SqlConnection(connexionString);
+            using SqlCommand commande = new SqlCommand("SelectQuantiteCommande", link);
+
+            commande.CommandType = CommandType.StoredProcedure;
+            commande.Parameters.Add("@idCommande", SqlDbType.Int).Value = idCommande;
+            commande.Parameters.Add("@idPalette", SqlDbType.Int).Value = idPalette;
+
+            link.Open();
+            object result = commande.ExecuteScalar();
+            link.Close();
             // Comparaison des quantités
-            if (quantitePalette >= quantiteCommande)
+            if (quantitePalette >= (int)result)
             {
-                string connexionString = global.connection;
+                string connexionStringe = global.connection;
 
-                using SqlConnection link = new SqlConnection(connexionString);
-                using SqlCommand commande = new SqlCommand("ValiderCommande", link);
+                using SqlConnection linkt = new SqlConnection(connexionString);
+                using SqlCommand commander = new SqlCommand("ValiderCommande", linkt);
 
                 commande.CommandType = CommandType.StoredProcedure;
-                commande.Parameters.Add("@idCommande", SqlDbType.Int).Value = idCommande;
-                commande.Parameters.Add("@idPalette", SqlDbType.Int).Value = idPalette;
+                commande.Parameters.Add("@idCommande", SqlDbType.Int).Value = global.user;
+                commande.Parameters.Add("@idPalette", SqlDbType.Int).Value = idCommande;
 
                 link.Open();
                 commande.ExecuteNonQuery();
