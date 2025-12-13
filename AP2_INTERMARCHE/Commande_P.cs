@@ -92,6 +92,7 @@ namespace AP2_INTERMARCHE
 
                 }
             }
+            button1.Enabled = true;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -123,13 +124,13 @@ namespace AP2_INTERMARCHE
                 using SqlConnection linkt = new SqlConnection(connexionString);
                 using SqlCommand commander = new SqlCommand("ValiderCommande", linkt);
 
-                commande.CommandType = CommandType.StoredProcedure;
-                commande.Parameters.Add("@idCommande", SqlDbType.Int).Value = global.user;
-                commande.Parameters.Add("@idPalette", SqlDbType.Int).Value = idCommande;
+                commander.CommandType = CommandType.StoredProcedure;
+                commander.Parameters.Add("@idCommande", SqlDbType.Int).Value = global.user;
+                commander.Parameters.Add("@idPalette", SqlDbType.Int).Value = idCommande;
 
-                link.Open();
-                commande.ExecuteNonQuery();
-                link.Close();
+                linkt.Open();
+                commander.ExecuteNonQuery();
+                linkt.Close();
 
                 MessageBox.Show("Commande validée : quantité suffisante.");
             }
