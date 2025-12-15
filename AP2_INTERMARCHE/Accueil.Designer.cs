@@ -29,13 +29,11 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            pictureBox1 = new PictureBox();
             txt_login = new TextBox();
             txt_mdp = new TextBox();
             btn_login = new Button();
             label2 = new Label();
             label3 = new Label();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -47,14 +45,6 @@
             label1.Text = "Bienvenue ";
             label1.TextAlign = ContentAlignment.MiddleCenter;
             label1.Click += label1_Click;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Location = new Point(493, 12);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(286, 159);
-            pictureBox1.TabIndex = 1;
-            pictureBox1.TabStop = false;
             // 
             // txt_login
             // 
@@ -112,12 +102,10 @@
             Controls.Add(btn_login);
             Controls.Add(txt_mdp);
             Controls.Add(txt_login);
-            Controls.Add(pictureBox1);
             Controls.Add(label1);
             Name = "Accueil";
             Text = "Form1";
             Load += Accueil_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -125,7 +113,6 @@
         #endregion
 
         private Label label1;
-        private PictureBox pictureBox1;
         private TextBox txt_login;
         private TextBox txt_mdp;
         private Button btn_login;
