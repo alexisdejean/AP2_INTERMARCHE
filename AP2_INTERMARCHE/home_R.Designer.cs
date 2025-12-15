@@ -33,6 +33,7 @@
             btn_atrib = new ToolStripMenuItem();
             utilisateurToolStripMenuItem = new ToolStripMenuItem();
             supprimerUtilisateurToolStripMenuItem = new ToolStripMenuItem();
+            ajouterUtilisateurToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -62,7 +63,7 @@
             // 
             // utilisateurToolStripMenuItem
             // 
-            utilisateurToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { supprimerUtilisateurToolStripMenuItem });
+            utilisateurToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { supprimerUtilisateurToolStripMenuItem, ajouterUtilisateurToolStripMenuItem });
             utilisateurToolStripMenuItem.Name = "utilisateurToolStripMenuItem";
             utilisateurToolStripMenuItem.Size = new Size(90, 24);
             utilisateurToolStripMenuItem.Text = "Utilisateur";
@@ -73,6 +74,13 @@
             supprimerUtilisateurToolStripMenuItem.Size = new Size(232, 26);
             supprimerUtilisateurToolStripMenuItem.Text = "Supprimer Utilisateur";
             supprimerUtilisateurToolStripMenuItem.Click += supprimerUtilisateurToolStripMenuItem_Click;
+            // 
+            // ajouterUtilisateurToolStripMenuItem
+            // 
+            ajouterUtilisateurToolStripMenuItem.Name = "ajouterUtilisateurToolStripMenuItem";
+            ajouterUtilisateurToolStripMenuItem.Size = new Size(232, 26);
+            ajouterUtilisateurToolStripMenuItem.Text = "Ajouter Utilisateur";
+            ajouterUtilisateurToolStripMenuItem.Click += ajouterUtilisateurToolStripMenuItem_Click;
             // 
             // home_R
             // 
@@ -97,5 +105,6 @@
         private ToolStripMenuItem btn_atrib;
         private ToolStripMenuItem utilisateurToolStripMenuItem;
         private ToolStripMenuItem supprimerUtilisateurToolStripMenuItem;
+        private ToolStripMenuItem ajouterUtilisateurToolStripMenuItem;
     }
 }

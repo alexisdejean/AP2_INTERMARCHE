@@ -4,6 +4,9 @@
     <Compile Update="Accueil.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="ajout_util_R.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="attrib_com_R.cs">
       <SubType>Form</SubType>
     </Compile>
