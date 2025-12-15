@@ -19,7 +19,7 @@ namespace AP2_INTERMARCHE
         {
             string id = txt_login.Text.Trim();
             string mdp = txt_mdp.Text;
-            global.connection = @"Server=MSI;Database=bdd_intermarche;Trusted_Connection=True;TrustServerCertificate=True;";
+            global.connection = @"Server=LAPTOP-C8LQR30P;Database=bdd_intermarche;Trusted_Connection=True;TrustServerCertificate=True;";
             if (ValidationIdentitee(id, mdp))
             {
                 if(ValidationRole(id, mdp))
@@ -94,7 +94,6 @@ namespace AP2_INTERMARCHE
                 while (datereader.Read())
                 {
                     role = datereader.GetInt32(0);
-                    User = datereader.GetInt32(1);
                 }
                 if (Convert.ToInt32(role) == 1)
                 {
