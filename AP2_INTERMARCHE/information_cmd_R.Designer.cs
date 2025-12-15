@@ -40,6 +40,7 @@
             columnHeader6 = new ColumnHeader();
             columnHeader7 = new ColumnHeader();
             columnHeader8 = new ColumnHeader();
+            btn_valider_cmd = new Button();
             SuspendLayout();
             // 
             // tb_commande
@@ -124,11 +125,22 @@
             columnHeader8.TextAlign = HorizontalAlignment.Center;
             columnHeader8.Width = 100;
             // 
+            // btn_valider_cmd
+            // 
+            btn_valider_cmd.Location = new Point(284, 541);
+            btn_valider_cmd.Name = "btn_valider_cmd";
+            btn_valider_cmd.Size = new Size(183, 29);
+            btn_valider_cmd.TabIndex = 5;
+            btn_valider_cmd.Text = "Valider commande";
+            btn_valider_cmd.UseVisualStyleBackColor = true;
+            btn_valider_cmd.Click += btn_valider_cmd_Click;
+            // 
             // information_cmd_R
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1648, 618);
+            Controls.Add(btn_valider_cmd);
             Controls.Add(tb_terminer);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -154,5 +166,6 @@
         private ColumnHeader columnHeader6;
         private ColumnHeader columnHeader7;
         private ColumnHeader columnHeader8;
+        private Button btn_valider_cmd;
     }
 }

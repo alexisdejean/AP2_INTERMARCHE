@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Net.NetworkInformation;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -46,7 +47,7 @@ namespace AP2_INTERMARCHE
                 }
                 link.Close();
             }
-            
+
             using SqlCommand cmd = new SqlCommand("afficherlescommandeterminer", link);
             {
                 cmd.CommandType = CommandType.StoredProcedure;
@@ -69,6 +70,26 @@ namespace AP2_INTERMARCHE
                     tb_terminer.Items.Add(item);
                 }
                 link.Close();
+            }
+        }
+
+        private void btn_valider_cmd_Click(object sender, EventArgs e)
+        {
+            int idCommande = int.Parse(tb_commande.SelectedItems[0].SubItems[0].Text);
+            string connexion = global.connection;
+            using SqlConnection link = new SqlConnection(connexion);
+            using SqlCommand commande = new SqlCommand("Valider_commande", link);
+            {
+                commande.CommandType = CommandType.StoredProcedure;
+                commande.Parameters.Add("@idcmd",SqlDbType.Int).Value = idCommande;
+                link.Open();
+                commande.ExecuteScalar();
+                link.Close();
+                information_cmd_R newForm = new information_cmd_R();
+                newForm.MdiParent = this;
+                newForm.WindowState = FormWindowState.Maximized;
+                newForm.Show();
+                this.Close();
             }
         }
     }
