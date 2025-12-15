@@ -15,4 +15,18 @@ Consignes pour visualiser le projet :
  
 Executer le fichier source, puis ensuite, arrivé devant l'espace de connexion, il vous faudra vous connecter avec les différents mots de passes présents dans la base de donnée fournie (les mots de passes ne sont pas hashés mais ont vocations à l'être dans le futur).
 
+Admin :   
+Identifiant : Admin.MD  
+Mot de passe : Admin123  
+  
+  
+Préparateur Commande :  
+Identifiant : Preparateur.PL  
+Mot de passe : UserP123  
+  
+
+Cariste :  
+Identifiant : Cariste.SB  
+Mot de passe : UserC123  
+
 Enfin, profitez de toutes les fonctionnalités de notre application !
