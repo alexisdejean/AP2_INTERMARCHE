@@ -68,6 +68,7 @@
             // 
             txt_mdp.Location = new Point(573, 370);
             txt_mdp.Name = "txt_mdp";
+            txt_mdp.PasswordChar = '*';
             txt_mdp.Size = new Size(125, 27);
             txt_mdp.TabIndex = 3;
             txt_mdp.TextChanged += txt_mdp_TextChanged;

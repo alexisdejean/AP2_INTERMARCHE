@@ -47,14 +47,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Commande_P.cs [Conception]",
+              "Title": "Commande_P.cs [Design]",
               "DocumentMoniker": "C:\\Users\\supra\\Documents\\Git\\AP2\\AP2_INTERMARCHE\\Commande_P.cs",
               "RelativeDocumentMoniker": "AP2_INTERMARCHE\\Commande_P.cs",
-              "ToolTip": "C:\\Users\\supra\\Documents\\Git\\AP2\\AP2_INTERMARCHE\\Commande_P.cs [Conception]",
-              "RelativeToolTip": "AP2_INTERMARCHE\\Commande_P.cs [Conception]",
+              "ToolTip": "C:\\Users\\supra\\Documents\\Git\\AP2\\AP2_INTERMARCHE\\Commande_P.cs [Design]",
+              "RelativeToolTip": "AP2_INTERMARCHE\\Commande_P.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-12T13:11:58.985Z",
-              "EditorCaption": " [Conception]"
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -77,7 +77,7 @@
               "RelativeDocumentMoniker": "AP2_INTERMARCHE\\Commande_P.cs",
               "ToolTip": "C:\\Users\\supra\\Documents\\Git\\AP2\\AP2_INTERMARCHE\\Commande_P.cs",
               "RelativeToolTip": "AP2_INTERMARCHE\\Commande_P.cs",
-              "ViewState": "AgIAAG0AAAAAAAAAAAAUwIAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEgAAAAAAAAAAADwv14AAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-12T13:12:02.592Z",
               "EditorCaption": ""
@@ -91,8 +91,7 @@
               "ToolTip": "C:\\Users\\supra\\Documents\\Git\\AP2\\AP2_INTERMARCHE\\Notification_C.cs [Conception]",
               "RelativeToolTip": "AP2_INTERMARCHE\\Notification_C.cs [Conception]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-12T13:11:53.096Z",
-              "EditorCaption": " [Conception]"
+              "WhenOpened": "2025-12-12T13:11:53.096Z"
             },
             {
               "$type": "Document",
@@ -103,8 +102,7 @@
               "ToolTip": "C:\\Users\\supra\\Documents\\Git\\AP2\\AP2_INTERMARCHE\\Accueil.cs [Conception]",
               "RelativeToolTip": "AP2_INTERMARCHE\\Accueil.cs [Conception]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-12T13:05:34.271Z",
-              "EditorCaption": " [Conception]"
+              "WhenOpened": "2025-12-12T13:05:34.271Z"
             },
             {
               "$type": "Document",
@@ -116,8 +114,7 @@
               "RelativeToolTip": "AP2_INTERMARCHE\\Accueil.cs",
               "ViewState": "AgIAADwAAAAAAAAAAAAuwEMAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-12T13:05:12.795Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-12T13:05:12.795Z"
             },
             {
               "$type": "Document",
