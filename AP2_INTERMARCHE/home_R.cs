@@ -16,5 +16,45 @@ namespace AP2_INTERMARCHE
         {
             InitializeComponent();
         }
+
+        private void btn_information_Click(object sender, EventArgs e)
+        {
+            information_cmd_R info = new information_cmd_R();
+            info.MdiParent = this;
+            info.WindowState = FormWindowState.Maximized;
+            info.Show();
+        }
+
+        private void btn_atrib_Click(object sender, EventArgs e)
+        {
+            attrib_com_R attribution = new attrib_com_R();
+            attribution.MdiParent = this;
+            attribution.WindowState = FormWindowState.Maximized;
+            attribution.Show();
+        }
+
+        private void supprimerUtilisateurToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            GestionUtilisateur gestion = new GestionUtilisateur();
+            gestion.MdiParent = this;
+            gestion.WindowState = FormWindowState.Maximized;
+            gestion.Show();
+        }
+
+        private void ajouterUtilisateurToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ajout_util_R ajout = new ajout_util_R();
+            ajout.MdiParent = this;
+            ajout.WindowState = FormWindowState.Maximized;
+            ajout.Show();
+        }
+
+        private void ajouterCommandeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ajout_commande_R ajout = new ajout_commande_R();
+            ajout.MdiParent = this;
+            ajout.WindowState = FormWindowState.Maximized;
+            ajout.Show();
+        }
     }
 }

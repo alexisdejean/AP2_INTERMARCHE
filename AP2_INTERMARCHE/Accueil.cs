@@ -19,17 +19,18 @@ namespace AP2_INTERMARCHE
         {
             string id = txt_login.Text.Trim();
             string mdp = txt_mdp.Text;
-
+            global.connection = @"Server=LAPTOP-C8LQR30P;Database=bdd_intermarche;Trusted_Connection=True;TrustServerCertificate=True;";
             if (ValidationIdentitee(id, mdp))
             {
                 if(ValidationRole(id, mdp))
                 {
-                    MessageBox.Show("Connexion Réussie !", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Connexion RÃ©ussie !", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     if (global.role == 1)
                     {
                         home_R connecte = new home_R();
                         connecte.Show();
+                        this.Hide();
                     }
                     else
                     {
@@ -37,18 +38,20 @@ namespace AP2_INTERMARCHE
                         {
                             home_P connectet = new home_P();
                             connectet.Show();
+                            this.Hide();
                         }
                         else
                         {
                             home_C connectee = new home_C();
                             connectee.Show();
+                            this.Hide();
                         }
                     }
                     
                 }
                 else
                 {
-                    MessageBox.Show("Rôle inconnu", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Rï¿½le inconnu", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
                     
@@ -68,9 +71,11 @@ namespace AP2_INTERMARCHE
                 commande.Parameters.Add("@mot_de_passe", SqlDbType.VarChar, 255).Value = mot_de_passe;
 
                 connexion.Open();
-
                 object result = commande.ExecuteScalar();
                 return result != null && Convert.ToInt32(result) == 1;
+
+                connexion.Close();
+                
             }
         }
         private bool ValidationRole(string identifiant, string mot_de_passe)
@@ -83,25 +88,33 @@ namespace AP2_INTERMARCHE
                 command.Parameters.Add("@identifiant", SqlDbType.VarChar, 100).Value = identifiant;
 
                 connexion.Open();
-
-                object result = command.ExecuteScalar();
-                if (Convert.ToInt32(result) == 1)
+                SqlDataReader datereader = command.ExecuteReader();
+                int role = 0;
+                int User = 0;
+                while (datereader.Read())
+                {
+                    role = datereader.GetInt32(0);
+                }
+                if (Convert.ToInt32(role) == 1)
                 {
                     global.role = 1;
+                    global.user = User;
                     return true;
                 }
                 else
                 {
-                    if (Convert.ToInt32(result) == 2)
+                    if (Convert.ToInt32(role) == 2)
                     {
                         global.role = 2;
+                        global.user = User;
                         return true;
                     }
                     else
                     {
-                        if (Convert.ToInt32(result) == 3)
+                        if (Convert.ToInt32(role) == 3)
                         {
                             global.role = 3;
+                            global.user = User;
                             return true;
                         }
                         else
@@ -110,6 +123,7 @@ namespace AP2_INTERMARCHE
                         }
                     }
                 }
+                connexion.Close();
             }
         }
 

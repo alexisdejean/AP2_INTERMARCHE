@@ -4,6 +4,21 @@
     <Compile Update="Accueil.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="ajout_commande_R.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ajout_util_R.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="attrib_com_R.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Commande_P.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GestionUtilisateur.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="home_C.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -11,6 +26,15 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="home_R.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="information_cmd_R.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Log_produit_C.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Notification_C.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

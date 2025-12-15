@@ -16,5 +16,12 @@ namespace AP2_INTERMARCHE
         {
             InitializeComponent();
         }
+        private void btn_voir_commande_Click(object sender, EventArgs e)
+        {
+            Commande_P commande = new Commande_P();
+            commande.MdiParent = this;
+            commande.WindowState = FormWindowState.Maximized;
+            commande.Show();
+        }
     }
 }
