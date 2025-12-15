@@ -48,5 +48,13 @@ namespace AP2_INTERMARCHE
             ajout.WindowState = FormWindowState.Maximized;
             ajout.Show();
         }
+
+        private void ajouterCommandeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ajout_commande_R ajout = new ajout_commande_R();
+            ajout.MdiParent = this;
+            ajout.WindowState = FormWindowState.Maximized;
+            ajout.Show();
+        }
     }
 }

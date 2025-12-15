@@ -34,13 +34,14 @@
             utilisateurToolStripMenuItem = new ToolStripMenuItem();
             supprimerUtilisateurToolStripMenuItem = new ToolStripMenuItem();
             ajouterUtilisateurToolStripMenuItem = new ToolStripMenuItem();
+            ajouterCommandeToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
             // 
             menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { btn_information, btn_atrib, utilisateurToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { btn_information, btn_atrib, utilisateurToolStripMenuItem, ajouterCommandeToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(1709, 28);
@@ -82,6 +83,13 @@
             ajouterUtilisateurToolStripMenuItem.Text = "Ajouter Utilisateur";
             ajouterUtilisateurToolStripMenuItem.Click += ajouterUtilisateurToolStripMenuItem_Click;
             // 
+            // ajouterCommandeToolStripMenuItem
+            // 
+            ajouterCommandeToolStripMenuItem.Name = "ajouterCommandeToolStripMenuItem";
+            ajouterCommandeToolStripMenuItem.Size = new Size(151, 24);
+            ajouterCommandeToolStripMenuItem.Text = "Ajouter commande";
+            ajouterCommandeToolStripMenuItem.Click += ajouterCommandeToolStripMenuItem_Click;
+            // 
             // home_R
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -106,5 +114,6 @@
         private ToolStripMenuItem utilisateurToolStripMenuItem;
         private ToolStripMenuItem supprimerUtilisateurToolStripMenuItem;
         private ToolStripMenuItem ajouterUtilisateurToolStripMenuItem;
+        private ToolStripMenuItem ajouterCommandeToolStripMenuItem;
     }
 }

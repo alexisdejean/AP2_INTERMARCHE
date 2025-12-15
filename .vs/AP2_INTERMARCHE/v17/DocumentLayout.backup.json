@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\arthu\\Documents\\workspace\\AP2_INTERMARCHE\\AP2_INTERMARCHE\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|c:\\users\\arthu\\documents\\workspace\\ap2_intermarche\\ap2_intermarche\\ap2_intermarche\\ajout_util_r.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|solutionrelative:ap2_intermarche\\ajout_util_r.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|c:\\users\\arthu\\documents\\workspace\\ap2_intermarche\\ap2_intermarche\\ap2_intermarche\\ajout_util_r.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|solutionrelative:ap2_intermarche\\ajout_util_r.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|c:\\users\\arthu\\documents\\workspace\\ap2_intermarche\\ap2_intermarche\\ap2_intermarche\\ajout_util_r.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|solutionrelative:ap2_intermarche\\ajout_util_r.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D77D83B8-4608-4097-B370-A65F75954CD6}|AP2_INTERMARCHE\\AP2_INTERMARCHE.csproj|c:\\users\\arthu\\documents\\workspace\\ap2_intermarche\\ap2_intermarche\\ap2_intermarche\\accueil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -75,25 +75,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ajout_util_R.cs [Conception]",
               "DocumentMoniker": "C:\\Users\\arthu\\Documents\\workspace\\AP2_INTERMARCHE\\AP2_INTERMARCHE\\AP2_INTERMARCHE\\ajout_util_R.cs",
               "RelativeDocumentMoniker": "AP2_INTERMARCHE\\ajout_util_R.cs",
-              "ToolTip": "C:\\Users\\arthu\\Documents\\workspace\\AP2_INTERMARCHE\\AP2_INTERMARCHE\\AP2_INTERMARCHE\\ajout_util_R.cs [Conception]*",
-              "RelativeToolTip": "AP2_INTERMARCHE\\ajout_util_R.cs [Conception]*",
+              "ToolTip": "C:\\Users\\arthu\\Documents\\workspace\\AP2_INTERMARCHE\\AP2_INTERMARCHE\\AP2_INTERMARCHE\\ajout_util_R.cs [Conception]",
+              "RelativeToolTip": "AP2_INTERMARCHE\\ajout_util_R.cs [Conception]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-15T12:04:52.991Z",
               "EditorCaption": " [Conception]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "ajout_util_R.cs",
               "DocumentMoniker": "C:\\Users\\arthu\\Documents\\workspace\\AP2_INTERMARCHE\\AP2_INTERMARCHE\\AP2_INTERMARCHE\\ajout_util_R.cs",
               "RelativeDocumentMoniker": "AP2_INTERMARCHE\\ajout_util_R.cs",
-              "ToolTip": "C:\\Users\\arthu\\Documents\\workspace\\AP2_INTERMARCHE\\AP2_INTERMARCHE\\AP2_INTERMARCHE\\ajout_util_R.cs*",
-              "RelativeToolTip": "AP2_INTERMARCHE\\ajout_util_R.cs*",
-              "ViewState": "AgIAAFkAAAAAAAAAAAAIwGsAAAAuAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\arthu\\Documents\\workspace\\AP2_INTERMARCHE\\AP2_INTERMARCHE\\AP2_INTERMARCHE\\ajout_util_R.cs",
+              "RelativeToolTip": "AP2_INTERMARCHE\\ajout_util_R.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAIwFMAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-15T12:04:33.131Z",
               "EditorCaption": ""
