@@ -15,6 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 <<<<<<< HEAD
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0cbf88f43d13d356739ef5832fda161606e9159d")]
 =======
 <<<<<<< HEAD
@@ -22,6 +23,9 @@ using System.Reflection;
 =======
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+97fc7bfbb95def6ac3c4c97a4687c793d02e29de")]
 >>>>>>> origin/dev
+>>>>>>> dev
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+38b23e576318099a9d0733af13d25633311b8ab4")]
 >>>>>>> dev
 [assembly: System.Reflection.AssemblyProductAttribute("AP2_INTERMARCHE")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AP2_INTERMARCHE")]

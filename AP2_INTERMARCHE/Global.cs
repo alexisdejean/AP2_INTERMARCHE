@@ -10,7 +10,7 @@ namespace AP2_INTERMARCHE
 {
     internal class global
     {
-        public static string connection = @"Server=MSI;Database=bdd_intermarche;Trusted_Connection=True;TrustServerCertificate=True;";
+        public static string connection = @"Server=LAPTOP-C8LQR30P;Database=bdd_intermarche;Trusted_Connection=True;TrustServerCertificate=True;";
         public static int role = 0;
         public static int user = 0;
         
