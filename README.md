@@ -1,32 +1,60 @@
-# AP2_INTERMARCHE
+AP2_INTERMARCHÉ
+Prep'Order – Application de gestion des préparations de commandes
+Description
 
-PROJET Prep'Order
-Application de gestion et de suivi des préparations de commande
+Prep'Order est une application interne développée pour Intermarché afin d’optimiser la gestion et le suivi des préparations de commandes au sein de ses bases logistiques.
+Le projet se concentre sur la base logistique de Heudebouville (Normandie), chargée de l’approvisionnement des magasins de la région.
 
-Développement d'une application de gestion des préparations de commande
+L’application permet aux équipes logistiques de préparer les commandes plus efficacement, de suivre l’état des palettes et de gérer les stocks en temps réel.
 
-Définition de l'objet
-L'entreprise Intermarché, l'un des leaders de la grande distribution en France, possède un réseau de bases logistiques assurant l’approvisionnement de ses magasins. Parmi ces bases, celle de Heudebouville, située en Normandie, joue un rôle crucial dans la distribution des marchandises aux différents points de vente de la région. La base d'Heudebouville emploie une équipe de préparateurs de commandes chargés de rassembler les produits, de les organiser en palettes, et de les expédier vers divers magasins Intermarché.
+Objectifs
 
-Pour améliorer l'efficacité des préparateurs de commandes et moderniser les outils de suivi des expéditions, la direction a décidé de développer un logiciel interne. Ce logiciel a pour objectif de centraliser la gestion des commandes, d’optimiser la préparation des palettes et de permettre une mise à jour en temps réel des stocks.
+Centralisation des commandes
 
+Optimisation de la préparation des palettes
 
-Consignes pour visualiser le projet :
- 
-Executer le fichier source, puis ensuite, arrivé devant l'espace de connexion, il vous faudra vous connecter avec les différents mots de passes présents dans la base de donnée fournie (les mots de passes ne sont pas hashés mais ont vocations à l'être dans le futur).
+Suivi en temps réel des stocks
 
-Admin :   
-Identifiant : Admin.MD  
-Mot de passe : Admin123  
-  
-  
-Préparateur Commande :  
-Identifiant : Preparateur.PL  
-Mot de passe : UserP123  
-  
+Amélioration de la productivité et de la fiabilité des expéditions
 
-Cariste :  
-Identifiant : Cariste.SB  
-Mot de passe : UserC123  
+Lancement du projet
 
-Enfin, profitez de toutes les fonctionnalités de notre application !
+Exécuter le fichier source
+
+Accéder à l’écran de connexion
+
+Utiliser l’un des comptes ci-dessous
+
+Les mots de passe sont actuellement stockés en clair (hashage prévu ultérieurement).
+
+Comptes de test
+
+Administrateur
+
+Identifiant : Admin.MD
+
+Mot de passe : Admin123
+
+Préparateur de commandes
+
+Identifiant : Preparateur.PL
+
+Mot de passe : UserP123
+
+Cariste
+
+Identifiant : Cariste.SB
+
+Mot de passe : UserC123
+
+Technologies
+
+C#
+
+Transact-SQL
+
+Contributeurs
+
+Alexis Déjean
+
+Arthur Chevalier
