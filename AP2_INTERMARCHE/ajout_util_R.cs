@@ -1,4 +1,4 @@
-﻿using Microsoft.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -21,22 +21,32 @@ namespace AP2_INTERMARCHE
 
         private void ajout_util_R_Load(object sender, EventArgs e)
         {
+            cb_role.Items.Clear();
+            cb_zone.Items.Clear();
             string connexion = global.connection;
             using SqlConnection link = new SqlConnection(connexion);
-            using SqlCommand commande = new SqlCommand("afficherlesroles", link);
+            link.Open();
+
+            using (SqlCommand commande = new SqlCommand("afficherlesroles", link))
             {
                 commande.CommandType = CommandType.StoredProcedure;
-                link.Open();
-                SqlDataReader datereader = commande.ExecuteReader();
-                int id = 0;
-                string libelle = "";
+                using SqlDataReader datereader = commande.ExecuteReader();
                 while (datereader.Read())
                 {
-                    id = datereader.GetInt32(0);
-                    libelle = datereader.GetString(1);
+                    int id = datereader.GetInt32(0);
+                    string libelle = datereader.GetString(1);
                     cb_role.Items.Add(id.ToString() + ' ' + libelle);
                 }
-                link.Close();
+            }
+
+            using SqlCommand commandeZone = new SqlCommand("afficherleszones", link);
+            commandeZone.CommandType = CommandType.StoredProcedure;
+            using SqlDataReader dataZone = commandeZone.ExecuteReader();
+            while (dataZone.Read())
+            {
+                int idZone = dataZone.GetInt32(0);
+                string libelleZone = dataZone.GetString(1);
+                cb_zone.Items.Add(idZone.ToString() + ' ' + libelleZone);
             }
         }
 
@@ -78,8 +88,14 @@ namespace AP2_INTERMARCHE
 
         private void cb_role_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (cb_role.SelectedItem == null)
+            {
+                cb_zone.Visible = false;
+                cb_zone.SelectedIndex = -1;
+                return;
+            }
 
-            string texte = cb_role.SelectedItem.ToString();
+            string texte = cb_role.SelectedItem.ToString()!;
             string idString = texte.Split(' ')[0];
             int idrole = int.Parse(idString);
 
@@ -95,38 +111,79 @@ namespace AP2_INTERMARCHE
 
         private void bt_ajouter_Click(object sender, EventArgs e)
         {
-            string texte = cb_role.SelectedItem.ToString();
-            string idString = texte.Split(' ')[0];
-            int idrole = int.Parse(idString);
-            string connexion = global.connection;
-            using SqlConnection link = new SqlConnection(connexion);
-            using SqlCommand commande = new SqlCommand("ajouter_utilisateur", link);
+            if (cb_role.SelectedItem == null)
             {
-                commande.CommandType = CommandType.StoredProcedure;
-                commande.Parameters.Add("@nom",SqlDbType.VarChar).Value = tb_nom.Text;
-                commande.Parameters.Add("@prenom", SqlDbType.VarChar).Value = tb_prenom.Text;
-                commande.Parameters.Add("@identifiant", SqlDbType.VarChar).Value = tb_identifiant.Text;
-                commande.Parameters.Add("@motdepasse", SqlDbType.VarChar).Value = tb_mdp.Text;
-                commande.Parameters.Add("@role", SqlDbType.Int).Value = idrole;
-                if (cb_zone.Visible == true)
-                {
-                    string zone = cb_zone.SelectedItem.ToString();
-                    string idzonetexte = texte.Split(' ')[0];
-                    int idzone = int.Parse(idzonetexte);
-                    commande.Parameters.Add("@zone", SqlDbType.Int).Value = idzone;
-                }
-                else
-                {
-                    commande.Parameters.Add("@zone", SqlDbType.Int).Value = -1;
-                }
-                    link.Open();
-                commande.ExecuteScalar();
-                link.Close();
-                tb_nom.Text = string.Empty;
-                tb_prenom.Text = string.Empty;
-                tb_identifiant.Text = string.Empty;
-                tb_mdp.Text = string.Empty;
+                MessageBox.Show("Veuillez sélectionner un rôle.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
             }
+
+            try
+            {
+                string roleTexte = cb_role.SelectedItem.ToString();
+                int idRole = int.Parse(roleTexte.Split(' ')[0]);
+                string connexion = global.connection;
+                string identifiant = tb_identifiant.Text.Trim();
+
+                using (SqlConnection link = new SqlConnection(connexion))
+                using (SqlCommand commande = new SqlCommand("AjouterUtilisateur", link))
+                {
+                    link.Open();
+
+                    if (IdentifiantExiste(link, identifiant))
+                    {
+                        MessageBox.Show("Cet identifiant existe dÃ©jÃ . Veuillez en choisir un autre.", "Identifiant dÃ©jÃ  utilisÃ©", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
+
+                    commande.CommandType = CommandType.StoredProcedure;
+                    commande.Parameters.Add("@nom", SqlDbType.VarChar).Value = tb_nom.Text.Trim();
+                    commande.Parameters.Add("@prenom", SqlDbType.VarChar).Value = tb_prenom.Text.Trim();
+                    commande.Parameters.Add("@identifiant", SqlDbType.VarChar).Value = identifiant;
+                    commande.Parameters.Add("@password", SqlDbType.VarChar, 255).Value = global.HashPassword(tb_mdp.Text);
+                    commande.Parameters.Add("@id_role", SqlDbType.Int).Value = idRole;
+
+                    if (cb_zone.Visible)
+                    {
+                        if (cb_zone.SelectedItem == null)
+                        {
+                            MessageBox.Show("Veuillez sélectionner une zone pour ce rôle.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            return;
+                        }
+                        string zoneTexte = cb_zone.SelectedItem.ToString();
+                        int idZone = int.Parse(zoneTexte.Split(' ')[0]);
+                        commande.Parameters.Add("@code_zone", SqlDbType.Int).Value = idZone;
+                    }
+                    else
+                    {
+                        commande.Parameters.Add("@code_zone", SqlDbType.Int).Value = DBNull.Value;
+                    }
+
+                    commande.ExecuteNonQuery();
+                }
+
+                MessageBox.Show("Utilisateur ajouté avec succès !", "Succès", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                
+                // Clear fields
+                tb_nom.Clear();
+                tb_prenom.Clear();
+                tb_identifiant.Clear();
+                tb_mdp.Clear();
+                cb_role.SelectedIndex = -1;
+                cb_zone.SelectedIndex = -1;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erreur lors de l'ajout : " + ex.Message, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private static bool IdentifiantExiste(SqlConnection link, string identifiant)
+        {
+            using SqlCommand verification = new SqlCommand(
+                "SELECT COUNT(1) FROM Utilisateur WHERE Identifiant = @identifiant", link);
+            verification.Parameters.Add("@identifiant", SqlDbType.VarChar, 100).Value = identifiant;
+
+            return Convert.ToInt32(verification.ExecuteScalar()) > 0;
         }
     }
 }

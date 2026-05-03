@@ -1,4 +1,4 @@
-﻿using Microsoft.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,7 +9,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
 namespace AP2_INTERMARCHE
 {
@@ -18,12 +17,51 @@ namespace AP2_INTERMARCHE
         public Commande_P()
         {
             InitializeComponent();
+            // global.ApplyTheme(this); // Commented out as I'm not sure if ApplyTheme exists in the current version of global.cs
+            Text = "Prep'Order | Préparation";
+        }
+
+        private void Commande_P_Load(object sender, EventArgs e)
+        {
+            LoadOrders();
+        }
+
+        private void LoadOrders()
+        {
+            tb_Commande.Items.Clear();
+            string connexion = global.connection;
+            try
+            {
+                using (SqlConnection link = new SqlConnection(connexion))
+                using (SqlCommand commande = new SqlCommand("AfficherLesCommande", link))
+                {
+                    commande.CommandType = CommandType.StoredProcedure;
+                    link.Open();
+                    using (SqlDataReader datereader = commande.ExecuteReader())
+                    {
+                        while (datereader.Read())
+                        {
+                            int id = datereader.GetInt32(0);
+                            string libelle = datereader.GetString(1);
+                            string statut = datereader.GetString(2);
+                            ListViewItem item = new ListViewItem(id.ToString());
+                            item.SubItems.Add(libelle);
+                            item.SubItems.Add(statut);
+                            tb_Commande.Items.Add(item);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erreur lors du chargement des commandes : " + ex.Message, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void tb_produit_SelectedIndexChanged(object sender, EventArgs e)
         {
-            textBox1.Enabled = true ;
-            Valider_notif.Enabled = true;
+            textBox1.Enabled = tb_produit.SelectedItems.Count > 0;
+            Valider_notif.Enabled = tb_produit.SelectedItems.Count > 0 && textBox1.TextLength > 0;
         }
 
         private void tb_Commande_SelectedIndexChanged(object sender, EventArgs e)

@@ -1,60 +1,158 @@
-AP2_INTERMARCHÉ
-Prep'Order – Application de gestion des préparations de commandes
-Description
+# AP2_INTERMARCHE
 
-Prep'Order est une application interne développée pour Intermarché afin d’optimiser la gestion et le suivi des préparations de commandes au sein de ses bases logistiques.
-Le projet se concentre sur la base logistique de Heudebouville (Normandie), chargée de l’approvisionnement des magasins de la région.
+## Prep'Order
 
-L’application permet aux équipes logistiques de préparer les commandes plus efficacement, de suivre l’état des palettes et de gérer les stocks en temps réel.
+Application Windows Forms de gestion de preparation de commandes pour une base logistique Intermarche.
 
-Objectifs
+## Raison d'etre du projet
 
-Centralisation des commandes
+Prep'Order sert a relier les equipes qui interviennent sur une meme commande mais n'ont pas les memes actions :
 
-Optimisation de la préparation des palettes
+- le responsable attribue et supervise
+- le preparateur controle les palettes et signale les ecarts
+- le cariste corrige le stock physique pour debloquer la commande
 
-Suivi en temps réel des stocks
+L'objectif metier est de reduire les blocages terrain, mieux suivre les palettes et fiabiliser les expeditions magasin.
 
-Amélioration de la productivité et de la fiabilité des expéditions
+## Comment les donnees se comportent
 
-Lancement du projet
+### 1. Flux principal
 
-Exécuter le fichier source
+Les donnees tournent autour de quatre elements :
 
-Accéder à l’écran de connexion
+- `Commande` : represente une commande a preparer pour un magasin
+- `Commander` : table de liaison entre une commande et les produits demandes avec leurs quantites
+- `Palette` : represente le stock physique disponible et sa position dans l'entrepot
+- `Notification` : signale un ecart ou un manque rencontre pendant la preparation
 
-Utiliser l’un des comptes ci-dessous
+Le comportement global est le suivant :
 
-Les mots de passe sont actuellement stockés en clair (hashage prévu ultérieurement).
+1. un responsable cree une commande magasin
+2. les lignes du CSV sont injectees dans la base comme produits a preparer
+3. le responsable attribue la commande a un preparateur compatible avec la zone
+4. le preparateur consulte les palettes trouvees pour la commande
+5. si une palette ne couvre pas le besoin, il cree une notification
+6. le cariste traite la notification, ajuste la quantite palette si necessaire, puis clot l'alerte
+7. quand la quantite est suffisante, la commande peut passer a l'etat valide
 
-Comptes de test
+### 2. Roles et etat applicatif
 
-Administrateur
+L'application garde un etat minimal dans `AP2_INTERMARCHE/Global.cs` :
 
-Identifiant : Admin.MD
+- `connection` : chaine de connexion SQL Server
+- `role` : role courant connecte
+- `user` : identifiant utilisateur courant, reserve pour des evolutions futures
 
-Mot de passe : Admin123
+Le role determine l'espace charge apres connexion :
 
-Préparateur de commandes
+- `1` : responsable
+- `2` : preparateur
+- `3` : cariste
 
-Identifiant : Preparateur.PL
+### 3. Procedures stockees utilisees
 
-Mot de passe : UserP123
+L'application consomme principalement des procedures stockees pour :
 
-Cariste
+- authentifier et identifier le role utilisateur
+- lister les commandes, palettes, notifications et logs
+- attribuer une commande
+- creer une notification
+- valider une commande
+- mettre a jour la quantite d'une palette
+- supprimer une notification une fois traitee
 
-Identifiant : Cariste.SB
+## Comment les fonctionnalites sont faites
 
-Mot de passe : UserC123
+### Connexion
 
-Technologies
+Le point d'entree est `AP2_INTERMARCHE/Program.cs`, qui ouvre `Accueil`.
 
-C#
+`Accueil.cs` :
 
-Transact-SQL
+- verifie le couple identifiant / mot de passe avec `VerifieIdentification`
+- recupere le role avec `VerifierRole`
+- ouvre ensuite l'ecran metier correspondant
 
-Contributeurs
+### Responsable
 
-Alexis Déjean
+`home_R.cs` est le tableau de bord du responsable. Il ouvre :
 
-Arthur Chevalier
+- `information_cmd_R.cs` pour voir les commandes et leur avancement
+- `attrib_com_R.cs` pour attribuer une commande a un preparateur par zone
+- `GestionUtilisateur.cs` pour supprimer des utilisateurs
+- `ajout_util_R.cs` pour creer des utilisateurs
+- `ajout_commande_R.cs` pour creer une commande et injecter les lignes d'un CSV
+
+### Preparateur
+
+`home_P.cs` ouvre `Commande_P.cs`.
+
+Cet ecran :
+
+- charge les commandes disponibles
+- recupere les palettes liees a la commande choisie
+- permet de saisir un message d'alerte si le stock trouve pose probleme
+- compare quantite palette et quantite demandee
+- valide la commande quand le stock est suffisant
+
+### Cariste
+
+`home_C.cs` ouvre deux ecrans :
+
+- `Notification_C.cs` pour traiter les alertes en cours
+- `Log_produit_C.cs` pour consulter l'historique des notifications et mouvements lies
+
+`Notification_C.cs` :
+
+- charge les notifications
+- retrouve la palette concernee
+- verifie la quantite deja presente
+- calcule la quantite attendue
+- met a jour la palette si le cariste ajoute du stock
+- supprime la notification une fois le traitement termine
+
+## Lancement du projet
+
+### Prerequis
+
+- Windows
+- .NET 8 SDK
+- SQL Server avec la base `bdd_intermarche`
+
+La chaine de connexion actuelle pointe vers :
+
+`Server=LAPTOP-C8LQR30P;Database=bdd_intermarche;Trusted_Connection=True;TrustServerCertificate=True;`
+
+Si la base est hebergee ailleurs, il faut adapter `AP2_INTERMARCHE/Global.cs`.
+
+### Comptes de test
+
+- Responsable
+  Identifiant : `Admin.MD`
+  Mot de passe : `Admin123`
+- Preparateur
+  Identifiant : `Preparateur.PL`
+  Mot de passe : `UserP123`
+- Cariste
+  Identifiant : `Cariste.SB`
+  Mot de passe : `UserC123`
+
+## Verification realisee
+
+Une compilation complete du projet a ete relancee avec succes sur la solution :
+
+`dotnet build AP2_INTERMARCHE.sln`
+
+Le projet compile sans erreur. Il reste cependant des avertissements de nullabilite et quelques incoherences de nommage non bloquantes, a traiter dans un second passage si besoin.
+
+## Technologies
+
+- C#
+- Windows Forms
+- SQL Server
+- Transact-SQL
+
+## Contributeurs
+
+- Alexis Dejean
+- Arthur Chevalier

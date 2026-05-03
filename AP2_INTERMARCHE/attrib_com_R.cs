@@ -1,4 +1,4 @@
-﻿using Microsoft.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -98,10 +98,12 @@ namespace AP2_INTERMARCHE
             }
             if (List_Commande.SelectedItems.Count == 0)
                 return;
+            if (cb_Zone.SelectedItem == null)
+                return;
             int idCommande = int.Parse(List_Commande.SelectedItems[0].SubItems[0].Text);
 
             tb_Utilisateur.Items.Clear();
-            string texte = cb_Zone.SelectedItem.ToString();
+            string texte = cb_Zone.SelectedItem.ToString()!;
             string idString = texte.Split(' ')[0];
             int idZone = int.Parse(idString);
             string connexion = global.connection;
@@ -146,35 +148,39 @@ namespace AP2_INTERMARCHE
 
         private void Valider_attrib_Click(object sender, EventArgs e)
         {
+            if (List_Commande.SelectedItems.Count == 0 || tb_Utilisateur.SelectedItems.Count == 0)
+            {
+                MessageBox.Show("Veuillez sélectionner une commande et un utilisateur.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
             int idCommande = int.Parse(List_Commande.SelectedItems[0].SubItems[0].Text);
             int idutil = int.Parse(tb_Utilisateur.SelectedItems[0].SubItems[0].Text);
             string connexion = global.connection;
-            using SqlConnection link = new SqlConnection(connexion);
-            using SqlCommand commande = new SqlCommand("AttributionUtil", link);
-            {
-                commande.CommandType = CommandType.StoredProcedure;
-                commande.Parameters.Add("@idcmd", SqlDbType.Int).Value = idCommande;
-                commande.Parameters.Add("@idutilisateur", SqlDbType.Int).Value = idutil;
-                link.Open();
-                SqlDataReader datereader = commande.ExecuteReader();
-                link.Close();
-                MessageBox.Show("ajout reussi");
 
+            try
+            {
+                using (SqlConnection link = new SqlConnection(connexion))
+                using (SqlCommand commande = new SqlCommand("AttributionUtil", link))
+                {
+                    commande.CommandType = CommandType.StoredProcedure;
+                    commande.Parameters.Add("@idcmd", SqlDbType.Int).Value = idCommande;
+                    commande.Parameters.Add("@idutilisateur", SqlDbType.Int).Value = idutil;
+                    link.Open();
+                    commande.ExecuteNonQuery();
+                }
+
+                MessageBox.Show("Attribution réussie !", "Succès", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                // Clear selection-dependent fields
                 cb_Zone.Items.Clear();
                 cb_Zone.SelectedIndex = -1;
                 cb_Zone.Text = "";
                 tb_Utilisateur.Items.Clear();
-
-                if (List_Commande.SelectedItems.Count == 0)
-                {
-                    return;
-                }
-                
-                if (tb_Utilisateur.SelectedItems.Count == 0)
-                {
-                    return;
-                }
-
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erreur lors de l'attribution : " + ex.Message, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

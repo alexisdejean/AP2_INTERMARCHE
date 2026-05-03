@@ -13,6 +13,12 @@ namespace AP2_INTERMARCHE
         public ajout_commande_R()
         {
             InitializeComponent();
+            Load += ajout_commande_R_Load;
+        }
+
+        private void ajout_commande_R_Load(object? sender, EventArgs e)
+        {
+            ChargerCommandes();
         }
 
         private void ajouter_commande_Click(object sender, EventArgs e)
@@ -39,7 +45,7 @@ namespace AP2_INTERMARCHE
                 return;
             }
 
-            string texte = cb_commande.SelectedItem.ToString();
+            string texte = cb_commande.SelectedItem.ToString()!;
             string idString = texte.Split(' ')[0];
             int idcommande = int.Parse(idString);
 
@@ -91,7 +97,7 @@ namespace AP2_INTERMARCHE
                         commande.Parameters.Add("@idcommande", SqlDbType.Int).Value = idCommande;
                         commande.Parameters.Add("@nomProduit", SqlDbType.NVarChar).Value = nomProduit;
                         commande.Parameters.Add("@qteproduit", SqlDbType.Int).Value = qteProduit;
-                        commande.ExecuteScalar();
+                        commande.ExecuteNonQuery();
                         return true;
                     }
                 }
@@ -105,6 +111,12 @@ namespace AP2_INTERMARCHE
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(tb_libelle_magasin.Text))
+            {
+                MessageBox.Show("Veuillez saisir un libellé magasin.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
             string connexion = global.connection;
             using (SqlConnection link = new SqlConnection(connexion))
             {
@@ -112,9 +124,32 @@ namespace AP2_INTERMARCHE
                 using (SqlCommand commande = new SqlCommand("ajout_magasin", link))
                 {
                     commande.CommandType = CommandType.StoredProcedure;
-                    commande.Parameters.Add("@libelle",SqlDbType.VarChar).Value = tb_libelle_magasin.Text;
-                    commande.ExecuteScalar();
+                    commande.Parameters.Add("@libelle",SqlDbType.VarChar).Value = tb_libelle_magasin.Text.Trim();
+                    commande.ExecuteNonQuery();
                 }
+            }
+
+            tb_libelle_magasin.Clear();
+            ChargerCommandes();
+        }
+
+        private void ChargerCommandes()
+        {
+            cb_commande.Items.Clear();
+            cb_commande.SelectedIndex = -1;
+
+            string connexion = global.connection;
+            using SqlConnection link = new SqlConnection(connexion);
+            using SqlCommand commande = new SqlCommand("AfficherLesCommande", link);
+            commande.CommandType = CommandType.StoredProcedure;
+
+            link.Open();
+            using SqlDataReader dataReader = commande.ExecuteReader();
+            while (dataReader.Read())
+            {
+                int idCommande = dataReader.GetInt32(0);
+                string libelleMagasin = dataReader.GetString(1);
+                cb_commande.Items.Add($"{idCommande} {libelleMagasin}");
             }
         }
     }

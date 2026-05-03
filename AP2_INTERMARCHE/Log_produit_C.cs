@@ -16,6 +16,8 @@ namespace AP2_INTERMARCHE
         public Log_produit_C()
         {
             InitializeComponent();
+            global.ApplyTheme(this);
+            Text = "Prep'Order | Historique d'alertes";
         }
 
         private void Log_produit_C_Load(object sender, EventArgs e) // PROCÉDURE NON CONFIGURÉE
@@ -35,7 +37,6 @@ namespace AP2_INTERMARCHE
                 int quantitee = 0;
                 while (datereader.Read())
                 {
-                    MessageBox.Show(datereader.GetString(4), "Information");
                     id = datereader.GetInt32(0);
                     libelle = datereader.GetString(1);
                     codePalette = datereader.GetInt32(2);
@@ -50,8 +51,6 @@ namespace AP2_INTERMARCHE
                     item.SubItems.Add(quantitee.ToString());
                     List_Logs.Items.Add(item);
                 }
-                link.Close();
-
             }
         }
 
