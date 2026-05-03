@@ -1,4 +1,4 @@
-﻿using Microsoft.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -50,7 +50,13 @@ namespace AP2_INTERMARCHE
             btn_supprimer.Enabled = false;
             cb_zone.Items.Clear();
             tb_Utilisateur.Items.Clear();
-            string texte = cb_role.SelectedItem.ToString();
+            if (cb_role.SelectedItem == null)
+            {
+                cb_zone.Visible = false;
+                return;
+            }
+
+            string texte = cb_role.SelectedItem.ToString()!;
             string idString = texte.Split(' ')[0];
             int idrole = int.Parse(idString);
             if (idrole == 2)
@@ -108,13 +114,18 @@ namespace AP2_INTERMARCHE
         {
             btn_supprimer.Enabled = false;
             tb_Utilisateur.Items.Clear();
-            string texte = cb_zone.SelectedItem.ToString();
+            if (cb_zone.SelectedItem == null)
+            {
+                return;
+            }
+
+            string texte = cb_zone.SelectedItem.ToString()!;
             string idString = texte.Split(' ')[0];
             int idZone = int.Parse(idString);
             string connexion = global.connection;
             using SqlConnection link = new SqlConnection(connexion);
             using SqlCommand commande = new SqlCommand("AfficherZonepreparateursupprimer", link);
-            commande.Parameters.Add("@id", SqlDbType.Int).Value = idZone;
+            commande.Parameters.Add("@id_zone", SqlDbType.Int).Value = idZone;
             {
                 commande.CommandType = CommandType.StoredProcedure;
                 link.Open();
@@ -138,23 +149,40 @@ namespace AP2_INTERMARCHE
 
         private void tb_Utilisateur_SelectedIndexChanged(object sender, EventArgs e)
         {
-            btn_supprimer.Enabled = true;
+            btn_supprimer.Enabled = tb_Utilisateur.SelectedItems.Count > 0;
         }
 
         private void btn_supprimer_Click(object sender, EventArgs e)
         {
-            tb_Utilisateur.Items.Clear();
+            if (tb_Utilisateur.SelectedItems.Count == 0)
+            {
+                MessageBox.Show("Veuillez sélectionner un utilisateur à supprimer.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
             int idutil = int.Parse(tb_Utilisateur.SelectedItems[0].SubItems[0].Text);
             string connexion = global.connection;
-            using SqlConnection link = new SqlConnection(connexion);
-            using SqlCommand commande = new SqlCommand("supprimerUtilisateur", link);
-            commande.Parameters.Add("@id",SqlDbType.Int).Value = idutil;
+
+            try
             {
-                commande.CommandType = CommandType.StoredProcedure;
-                link.Open();
-                SqlDataReader datereader = commande.ExecuteReader();
-                link.Close();
-                MessageBox.Show("suppression reussi");
+                using (SqlConnection link = new SqlConnection(connexion))
+                using (SqlCommand commande = new SqlCommand("supprimerUtilisateur", link))
+                {
+                    commande.CommandType = CommandType.StoredProcedure;
+                    commande.Parameters.Add("@id", SqlDbType.Int).Value = idutil;
+                    link.Open();
+                    commande.ExecuteNonQuery();
+                }
+
+                MessageBox.Show("Suppression réussie !", "Succès", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                
+                // Clear the list or refresh it
+                tb_Utilisateur.Items.Clear();
+                btn_supprimer.Enabled = false;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erreur lors de la suppression : " + ex.Message, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

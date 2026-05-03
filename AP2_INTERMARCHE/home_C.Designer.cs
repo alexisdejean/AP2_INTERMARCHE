@@ -31,13 +31,14 @@
             menuStrip1 = new MenuStrip();
             btn_log = new ToolStripMenuItem();
             btn_commande = new ToolStripMenuItem();
+            seDeconnecterToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
             // 
             menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { btn_log, btn_commande });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { btn_log, btn_commande, seDeconnecterToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(1202, 28);
@@ -57,6 +58,14 @@
             btn_commande.Size = new Size(142, 24);
             btn_commande.Text = "Alerte commande";
             btn_commande.Click += btn_commande_Click;
+            // 
+            // seDeconnecterToolStripMenuItem
+            // 
+            seDeconnecterToolStripMenuItem.Alignment = ToolStripItemAlignment.Right;
+            seDeconnecterToolStripMenuItem.Name = "seDeconnecterToolStripMenuItem";
+            seDeconnecterToolStripMenuItem.Size = new Size(117, 24);
+            seDeconnecterToolStripMenuItem.Text = "Déconnexion";
+            seDeconnecterToolStripMenuItem.Click += seDeconnecterToolStripMenuItem_Click;
             // 
             // home_C
             // 
@@ -79,5 +88,6 @@
         private MenuStrip menuStrip1;
         private ToolStripMenuItem btn_log;
         private ToolStripMenuItem btn_commande;
+        private ToolStripMenuItem seDeconnecterToolStripMenuItem;
     }
 }

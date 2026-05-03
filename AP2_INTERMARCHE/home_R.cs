@@ -12,9 +12,14 @@ namespace AP2_INTERMARCHE
 {
     public partial class home_R : Form
     {
+        private Panel? panneauPresentation;
+
         public home_R()
         {
             InitializeComponent();
+            ConfigurerAccueilRole();
+            MdiChildActivate += home_R_MdiChildActivate;
+            Resize += home_R_Resize;
         }
 
         private void btn_information_Click(object sender, EventArgs e)
@@ -55,6 +60,79 @@ namespace AP2_INTERMARCHE
             ajout.MdiParent = this;
             ajout.WindowState = FormWindowState.Maximized;
             ajout.Show();
+        }
+
+        private void ConfigurerAccueilRole()
+        {
+            Text = "Prep'Order | Responsable";
+            global.ApplyTheme(this);
+            panneauPresentation = global.CreateHeroPanel(
+                "Espace responsable",
+                "Attribuer les commandes, suivre leur progression et administrer les utilisateurs.",
+                "La mission du projet est d'orchestrer la logistique de façon plus lisible et plus rapide pour toutes les équipes."
+            );
+            AfficherPanneauPresentation();
+        }
+
+        private void home_R_MdiChildActivate(object? sender, EventArgs e)
+        {
+            if (panneauPresentation != null)
+            {
+                panneauPresentation.Visible = ActiveMdiChild == null;
+            }
+        }
+
+        private void AfficherPanneauPresentation()
+        {
+            if (panneauPresentation == null)
+            {
+                return;
+            }
+
+            if (!Controls.Contains(panneauPresentation))
+            {
+                Controls.Add(panneauPresentation);
+            }
+
+            panneauPresentation.Anchor = AnchorStyles.Top;
+            PositionnerPanneauPresentation();
+            panneauPresentation.BringToFront();
+        }
+
+        private void home_R_Resize(object? sender, EventArgs e)
+        {
+            PositionnerPanneauPresentation();
+        }
+
+        private void PositionnerPanneauPresentation()
+        {
+            if (panneauPresentation == null)
+            {
+                return;
+            }
+
+            int top = (MainMenuStrip?.Bottom ?? 0) + 32;
+            int left = Math.Max((ClientSize.Width - panneauPresentation.Width) / 2, 24);
+            panneauPresentation.Location = new Point(left, top);
+        }
+
+        private void seDeconnecterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form enfant in MdiChildren)
+            {
+                enfant.Close();
+            }
+
+            global.role = 0;
+            global.user = 0;
+
+            if (Owner is Accueil accueil)
+            {
+                accueil.Show();
+                accueil.BringToFront();
+            }
+
+            Close();
         }
     }
 }

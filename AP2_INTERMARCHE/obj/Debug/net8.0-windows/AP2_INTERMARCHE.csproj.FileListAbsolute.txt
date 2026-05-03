@@ -223,3 +223,7 @@ C:\Users\arthu\Documents\workspace\AP2_INTERMARCHE\AP2_INTERMARCHE\AP2_INTERMARC
 C:\Users\arthu\Documents\workspace\AP2_INTERMARCHE\AP2_INTERMARCHE\AP2_INTERMARCHE\obj\Debug\net8.0-windows\AP2_INTE.03D765B9.Up2Date
 C:\Users\arthu\Documents\workspace\AP2_INTERMARCHE\AP2_INTERMARCHE\AP2_INTERMARCHE\obj\Debug\net8.0-windows\AP2_INTERMARCHE.genruntimeconfig.cache
 C:\Users\arthu\Documents\workspace\AP2_INTERMARCHE\AP2_INTERMARCHE\AP2_INTERMARCHE\obj\Debug\net8.0-windows\ref\AP2_INTERMARCHE.dll
+C:\Users\supra\Documents\Git\AP2_INTERMARCHE_T\AP2_INTERMARCHE\obj\Debug\net8.0-windows\AP2_INTERMARCHE.ajout_commande_R.resources
+C:\Users\supra\Documents\Git\AP2_INTERMARCHE_T\AP2_INTERMARCHE\obj\Debug\net8.0-windows\AP2_INTERMARCHE.ajout_util_R.resources
+C:\Users\supra\Documents\Git\AP2_INTERMARCHE_T\AP2_INTERMARCHE\obj\Debug\net8.0-windows\AP2_INTERMARCHE.ModifierUsers.resources
+C:\Users\supra\Documents\Git\AP2_INTERMARCHE_T\AP2_INTERMARCHE\obj\Debug\net8.0-windows\AP2_INTERMARCHE.Properties.Resources.resources
